@@ -13,14 +13,217 @@
 {% endblock %}
 
 {# Custom tags before </body> #}
-{% block customJs %}  
+{% block customJs %}
 {% endblock %}
 
 {# Main content #}
 {% block content %}
 
-<main>
+<main class="top">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <ul class="flex hero__cat">
+                <li class="cat"><em>学校行事</em>等で利用をお考えの学校関係者様</li>
+                <li class="cat"><em>こども会</em>等で利用される一般団体様<span class="caution">※一般団体は20名以上から受付しております。</span></li>
+                <li class="cat"><em>顧客へ提案</em>される旅行代理店様</li>
+            </ul>
+            <div class="item">
+                <h1 class="ttl-primary cB">団体でご利用される方へ</h1>
+                <h2 class="hero__lead">キッザニアは職業・社会体験を通じて、<br>
+                    こども達の“生きる力”を育み、<br class="sp-only">将来を考えるきっかけを提供します。</h2>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="https://ors-test.tmedia.jp/catalog/" class="more">
+                            団体予約はこちら
+                        </a>
+                        <a href="https://ors-test.tmedia.jp/catalog/" class="more contact-orange">
+                            お問い合わせはこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
 
+    <section class="reason02">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニアは多くの<br>学校・一般団体様に選ばれています。</h2>
+            <ul class="flex jcC item">
+                <li class="item__box">
+                    <h3 class="item__box--ttl">学校団体予約件数</h3>
+                    <div class="item__box--txt"><span>2,427</span> 校</div>
+                </li>
+                <li class="item__box">
+                    <h3 class="item__box--ttl">一般団体予約件数</h3>
+                    <div class="item__box--txt"><span>909</span> 団体</div>
+                </li>
+                <li class="item__box">
+                    <h3 class="item__box--ttl">団体来場者数</h3>
+                    <div class="item__box--txt"><span>205,388</span> 名</div>
+                </li>
+            </ul>
+            <a href="/case/" class="more to-page-blue">実績・事例を見る</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニアとは</h2>
+            <p class="about__txt">キッザニアは、こども達が好きな仕事にチャレンジし、<br class="pc-only">
+                楽しみながら社会の仕組みを学ぶことができる職業・社会体験施設です。<br><br>
+                「キャリア教育」「SDGs」「英語」をテーマにした、<br class="pc-only">
+                ３つの学校団体向けプログラムもご用意しています。</p>
+            <a href="/case/" class="more to-page-blue">詳しくはこちら</a>
+        </div>
+    </section>
+
+    <section class="needs card-type2">
+        <div class="containers">
+            <h2 class="ttl-secondary">以下のようなニーズ・課題を<br>お持ちの方々に活用されています。</h2>
+            <ul class="flex gap30 card">
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">児童・生徒が自ら考え、<br>気づき、行動できる環境で<br>課外活動を行いたい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="/assets/img/top/img-needs01.png" alt=""></figure>
+                    </summary>
+                    <a href="/case/" class="more to-customer">学校団体様へ</a>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">「非日常を体験できる」<br>こども会の行事プランを<br>立てたい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="/assets/img/top/img-needs02.png" alt=""></figure>
+                    </summary>
+                    <a href="/case/" class="more to-customer">一般団体様へ</a>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">エンターテインメント性のある<br>修学旅行・校外学習を<br>提案したい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="/assets/img/top/img-needs03.png" alt=""></figure>
+                    </summary>
+                    <a href="/case/" class="more to-customer">旅行代理店様へ</a>
+                </li>
+            </ul>
+            <a href="#" class="more">団体予約はこちら</a>
+        </div>
+    </section>
+    
+
+    <section class="dl-catalog latest">
+        <div class="containers">
+            <h2 class="ttl-secondary non">キッザニアの資料ダウンロード</h2>
+            <div class="flex gap30 jcC">
+                <div class="flex item jcC">
+                    <div class="item__img"><img src="/assets/img/top/img-top-dummy.png" alt=""></div>
+                    <h3 class="item__ttl">学校団体様向け資料</h3>
+                    <a href="#" class="more">資料ダウンロード</a>
+                </div>
+                <div class="flex item jcC">
+                    <div class="item__img"><img src="/assets/img/top/img-top-dummy.png" alt=""></div>
+                    <h3 class="item__ttl">一般学校団体様向け資料</h3>
+                    <a href="#" class="more">資料ダウンロード</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="containers">
+            <h2 class="ttl-secondary non">よくあるご質問</h2>
+          <dl>
+            <dt class="question"><h2 class="question__ttl">食事はどうすればいいですか？</h2></dt>
+            <dd class="answer">
+                <p class="faq__txt">各飲食店にて好きなものを当日購入していただけます。<br>
+                ご希望の団体様には、フードチケット（別途料金、要事前申し込み）をご用意しております。<br>
+                （フードチケットメニューは当日購入いただくことができかねますのでご了承ください。）
+                </p>
+                <div class="faq__wrap">
+                    <b>【キッザニア東京】</b>
+                    飲食店（モスバーガー、ピザーラエクスプレス、RF1、シャウエッセン）をご利用ください。
+                    <a href="#" target="_blank">東京フードチケットメニューはこちら</a>
+                </div>
+                <div class="faq__wrap">
+                    <b>【キッザニア甲子園】</b>
+                    飲食店（ドンク、シャウエッセン、ピザーラエクスプレス、RF1）をご利用ください。
+                    <a href="#" target="_blank">甲子園フードチケットメニューはこちら</a>
+                </div>
+                <div class="faq__wrap">
+                    <b>【キッザニア福岡】</b>
+                    飲食店（RF1、宮武讃岐うどん、ピザーラエクスプレス）をご利用ください。
+                    <a href="#" target="_blank">福岡フードチケットメニューはこちら</a>
+                </div>
+            </dd>
+          </dl>
+    
+          <dl>
+            <dt class="question"><h2 class="question__ttl">予約後の人数変更は可能ですか？</h2></dt>
+            <dd class="answer">
+                <p class="faq__txt">アクティビティによって体験時間が異なるため、昼食は個別にとっていただくことになります。<br>
+                    フードコートのお席を各所にご用意しておりますので、アクティビティ体験の合間に、小人数でとっていただくようになります。万一、フードコートのお席が埋まってしまっている場合、劇場の客席でも飲食可能です。<br>
+                    ※食事スペースの確保は行っておりません。フードコートのお席のお取り置きはご遠慮ください。</p>
+            </dd>
+          </dl>
+    
+          <dl>
+            <dt class="question"><h2 class="question__ttl">体験は何個くらいできますか？</h2></dt>
+            <dd class="answer">
+                <p class="faq__txt">学校団体の平均的な滞在時間（4～5時間）の中で、4～5つが平均体験数です。<br>
+                1つの体験時間は平均約20分～30分ほどかかります。待ち時間も合わせて1時間に1つを体験の目安にしてください。<br>
+                ※滞在時間や当日の混雑状況等により変動します。
+                </p>
+            </dd>
+          </dl>
+          <a href="#" class="more to-page-blue">よくあるご質問一覧を見る</a>
+        </div>
+      </section>
+
+    <section class="reserve">
+        <div class="containers">
+            <h2 class="ttl-secondary non">貸切利用も受付しております。</h2>
+            <p class="lead">キッザニアでは、企業や団体様向けに<br class="sp-only">施設貸切プランをご用意しています。<br>
+                団体貸切利用、企業研修、会社の福利厚生や<br class="sp-only">ファミリー向け懇親会など、<br class="sp-only">用途に合わせてアレンジが可能です。<br>
+                まずは、お気軽にご相談ください。</p>
+            <ul class="wrapper">
+                <li>利用人数：200名~</li>
+                <li>貸切利用可能日時：お問い合わせフォームよりご相談ください</li>
+                <li>申込み期限：実施希望日の5ヶ月前まで</li>
+            </ul>
+            <a href="#" class="more contact-orange">貸切利用のお問い合わせはこちら</a>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="/contact/" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="/assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <div class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</div>
+                    </div>
+                </a>
+                <a href="/visit/" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="/assets/img/common/icon-visit.png" alt="施設見学申込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申込み</h2>
+                        <div class="item__box--txt">キッザニアは東京・甲子園・福岡すべての<br>拠点で施設見学が可能です。</div>
+                    </div>
+                </a>
+                <a href="/reserve/" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="/assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <div class="item__box--txt">貸切でもご利用いただけます。<br>※一般団体様は20名以上から<br class="sp-only">受付しております。</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 {% endblock %}

@@ -37,7 +37,7 @@
 }
 
 // ボタン
-.btn01 {
+.more {
 	display: block;
   max-width: 560px;
 	color: #fff;
@@ -45,17 +45,16 @@
 	font-weight: bold;
 	text-align: center;
 	padding: 17px;
-	background: #0D5BAB;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+	background: #AD033B;
 	position: relative;
   border-radius: 50px;
   margin: 0 auto;
-  border: 3px solid #0D5BAB;
+  border: 3px solid #AD033B;
 	@media #{$sp} {
 		font-size: 14px;
     padding: 13px;
     max-width: 85%;
-    border: 2px solid #0D5BAB;
+    border: 2px solid #AD033B;
 	}
   &:before {
 		content: "";
@@ -77,10 +76,10 @@
   &:hover {
     opacity: 1;
     background: #fff;
-    color: #0D5BAB;
+    color: #AD033B;
     &::before {
-      border-top: solid 3px #0D5BAB;
-      border-right: solid 3px #0D5BAB;
+      border-top: solid 3px #AD033B;
+      border-right: solid 3px #AD033B;
     }
   }
   // サムネ付きボタン
@@ -132,9 +131,86 @@
     width: 140px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.16);
     &:before {
       content: none;
+    }
+  }
+
+  // オレンジ（主にお問い合せ）
+  &.contact-orange {
+    background: #DE8703;
+    border-color: #DE8703;
+    &:hover {
+      background: #FFF;
+      color: #DE8703;
+
+      &::before {
+        border-top: solid 3px #DE8703;
+        border-right: solid 3px #DE8703;
+      }
+    }
+  }
+
+  // ブルー（一覧ページへ）
+  &.to-page-blue {
+      background: #FFF;
+      color: #002060;
+      border-color: #002060;
+      padding: 10px 17px;
+
+      &::before {
+        border-top: solid 3px #002060;
+        border-right: solid 3px #002060;
+      }
+
+
+    &:hover {
+      color: #fff;
+      background: #002060;
+      border-color: #002060;
+
+      &::before {
+        border-top: solid 3px #fff;
+        border-right: solid 3px #fff;
+      }
+    }
+  }
+
+    // ブルーボーダー（団体向け）
+    &.to-customer {
+      background: #E8EBF1;
+      color: #002060;
+      border-color: #002060;
+      border-radius: 5px;
+      padding: 3px 17px;
+
+      &::before {
+        right: 22px;
+        width: 5px;
+        height: 5px;
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
+        z-index: 10;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        margin: auto;
+        width: 18px;
+        height: 18px;
+        background-color: #002060;
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.3s ease;
     }
   }
 }
@@ -203,7 +279,7 @@
     margin-top: 5px;
     font-size: 13px;
     font-weight: bold;
-    color: #0D5BAB;
+    color: #AD033B;
     @media #{$sp} {
       font-size: 12px;
     }

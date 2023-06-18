@@ -4,5 +4,130 @@
   ----------------
 */
 footer {
-	
+  background: #212529;
+  color: #FFF;
+  .containers.nav {
+    width: 1100px;
+    padding: 60px 0 50px;
+    @media #{$sp} {
+      width: 100%;
+      padding: 30px 15px 20px;
+    }
+  }
+  .nav {
+    &__box {
+      width: calc(100% / 4 - 20px);
+      font-size: 12px;
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &--ttl {
+        font-weight: bold;
+        line-height: (18 / 12);
+        padding-bottom: 6px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 15px;
+        @media #{$sp} {
+          margin-bottom: 10px;
+        }
+      }
+      &--list {
+        li {
+          margin-bottom: 10px;
+          padding-left: 1.5em;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border: 1px solid;
+            border-color: #DE8703 #DE8703 transparent transparent;
+            transform: rotate(45deg);
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              text-decoration: underline;
+            }
+          }
+          span {
+            display: inline-block;
+            margin: 7px 0 0 12px;
+
+            a {
+              display: inline-block;
+              padding-left: 13px;
+              position: relative;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 10px;
+                  left: 0;
+                  width: 6px;
+                  height: 1px;
+                  background-color: #DE8703;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+  .aside {
+    max-width: 1160px;
+    margin: 0 auto;
+    border-top: 1px solid #E1D8B8;
+    padding: 30px;
+    font-size: 14px;
+    @media #{$sp} {
+      font-size: 12px;
+      padding: 15px;
+    }
+    &__nav {
+      margin-bottom: 15px;
+      @media #{$sp} {
+        margin-bottom: 10px;
+      }
+      li {
+        padding: 0 30px;
+        position: relative;
+        @media #{$sp} {
+          padding: 0 10px;
+        }
+        &:not(:last-child) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 10px;
+            width: 1px;
+            background: #fff;
+          }
+        }
+        a {
+          color: #fff;
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__copy {
+      color: #fff;
+      text-align: center;
+      @media #{$sp} {
+        font-size: 10px;
+      }
+    }
+  }
+  
 }
