@@ -293,6 +293,9 @@
 
     .card {
       &__wrap {
+        @media #{$sp} {
+          width: (586/ 750)*100vw;
+        }
         &--ttl {
           background-color: #162F61;
           padding: 18px 30px;
@@ -331,6 +334,13 @@
         &--img {
           width: 174px;
           margin: auto;
+        }
+      }
+
+      .more {
+        @media #{$sp} {
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
