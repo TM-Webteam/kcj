@@ -242,8 +242,10 @@
   }
 
   .about {
-    background: #F7F6E8 url("../img/top/bg-about-sp.png") no-repeat top right / cover;
-
+    background: #F7F6E8 url("../img/top/bg-about.png") no-repeat top right / auto 100%;
+    @media #{$sp} {
+      background: #F7F6E8 url("../img/top/bg-about-sp.png") no-repeat top right / cover;
+    }
     .containers {
       @media #{$sp} {
         padding: (70 / 750)* 100vw (30 / 750)* 100vw;
