@@ -21,7 +21,7 @@ header {
     font-size: 15px;
     font-weight: 700;
     position: relative;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.16);
     background: #fff;
     .pull {
       background: #dfe4e8;
@@ -218,10 +218,12 @@ header {
     &__logo {
       &__img {
         padding: 11px 0 0 26px;
-        width: 168px;
+        width: 160px;
+        aspect-ratio: 138 / 49;
         
         @media #{$sp} {
-          padding: 0 15px;
+          width: 140px;
+          padding: 10px 15px;
         }
       }
       span {
@@ -240,7 +242,7 @@ header {
         }
         &:first-of-type {
           a {
-            background: #F37D07;
+            background: #DE8703;
           }
         }
 
@@ -322,7 +324,7 @@ header {
           }
           &:first-child {
             a {
-              background: #F37D07;
+              background: #DE8703;
             }
           }
         }
