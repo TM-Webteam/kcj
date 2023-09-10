@@ -1,0 +1,102 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "お役立ちコラム" %}
+{% set description = "こども達の“生きる力”を育むキッザニアの取り組みや、キャリア教育に関する情報をお届けするコラムです。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="column">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">お役立ちコラム</h1>
+                <h2 class="hero__lead">こども達の“生きる力”を育むキッザニアの取り組みや、<br class="pc-only">キャリア教育に関する情報をお届けするコラムです。</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid">
+            <div class="containers">
+                <div class="flex gap30 grid">
+                    <a href="./page001.html" class="grid__card">
+                        <div class="grid__card--img"><img src="../assets/img/column/thumb-column01.png" alt=""></div>
+                        <h3 class="grid__card--ttl">修学旅行での学びを豊かなものにするには？必要な事前準備や行き先をご紹介</h3>
+                        <div class="grid__card--time"><time class="time">2023.8.14</time></div>
+                    </a>
+                    <a href="./page002.html" class="grid__card">
+                        <div class="grid__card--img"><img src="../assets/img/column/thumb-column02.png" alt=""></div>
+                        <h3 class="grid__card--ttl">こども会のイベントアイデア7選｜企画のポイントもご紹介</h3>
+                        <div class="grid__card--time"><time class="time">2023.8.14</time></div>
+                    </a>
+                </div>
+    
+                <!-- <nav class="pagination">
+                <div class="nav-links">
+                    <a class="prev page-numbers" href="#"><span></span></a>
+                    <a class="page-numbers" href="#">1</a>
+                    <span class="page-numbers current">2</span>
+                    <a class="page-numbers" href="#">3</a>
+                    <a class="page-numbers" href="#">4</a>
+                    <a class="page-numbers" href="#">5</a>
+                    <a class="next page-numbers" href="#"><span></span></a>
+                </div>
+                </nav> -->
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="../contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="../visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="../visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="../visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="../reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

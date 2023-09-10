@@ -6,8 +6,10 @@
 
 .thanks {
 
+  background-color: #F9F8EE;
+
   .containers {
-    padding: 70px 30px 100px;
+    padding: 90px 30px;
     @media #{$sp} {
       padding: 35px 15px 50px;
     }
@@ -15,7 +17,10 @@
 
   .ttl-primary-lower {
     font-size: 35px;
+    font-weight: bold;
+    text-align: center;
     color: #000;
+    margin-bottom: 30px;
     @media #{$sp} {
       font-size: 20px;
     }
@@ -23,13 +28,24 @@
 
   .lead {
     font-size: 20px;
+    line-height: (35 / 20);
     font-weight: normal;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     @media #{$sp} {
       font-size: 14px;
       margin-bottom: 40px;
     }
   }
 
+  .more {
+    width: 400px;
+    padding: 18px;
+    line-height: 1;
+    font-size: 16px;
+
+    @media #{$sp} {
+      width: 100%;
+    }
+  }
 }
 

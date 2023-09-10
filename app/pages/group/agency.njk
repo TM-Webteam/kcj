@@ -1,0 +1,229 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "旅行代理店の担当者の方へ" %}
+{% set description = "学校行事やイベントとしてキッザニアをご提案いただける旅行代理店の担当者の方へ、ご提案に活用いただける3つのプログラムをご紹介します。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="agency">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <div class="speech-bubble"><span class="speech-bubble__txt">学校行事やイベントをご提案される</span></div>
+                <h1 class="ttl-primary cB">旅行代理店の担当者の方へ</h1>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="../catalog/catalog-school.html" class="more">
+                            学校団体向け資料ダウンロード
+                        </a>
+                        <a href="../catalog/catalog-general.html" class="more border-red">
+                            一般団体向け資料ダウンロード
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <a href="../index.html">団体TOP</a>
+        <span>></span>
+        <span>旅行代理店の担当者の方へ</span>
+    </section>
+
+    <section class="reason02">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニアは多くの<br>学校・一般団体の方に選ばれています。</h2>
+            <ul class="flex jcC item">
+                <li class="item__box">
+                    <h3 class="item__box--ttl">学校団体予約件数</h3>
+                    <h3 class="item__box--txt"><span>2,427</span> 校</h3>
+                </li>
+                <li class="item__box">
+                    <h3 class="item__box--ttl">一般団体予約件数</h3>
+                    <h3 class="item__box--txt"><span>909</span> 団体</h3>
+                </li>
+                <li class="item__box">
+                    <h3 class="item__box--ttl">団体来場者数</h3>
+                    <h3 class="item__box--txt"><span>205,388</span> 名</h3>
+                    <div class="item__box--cation">※2019年度実績</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="needs card-type2">
+        <div class="containers">
+            <h2 class="ttl-secondary">こんな旅行代理店の担当者の方におすすめです</h2>
+            <ul class="flex card">
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">教育ニーズに合致したプランを<br>提案したい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs01.png" alt=""></figure>
+                    </summary>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">安心して楽しめる行き先を<br>提案したい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs02.png" alt=""></figure>
+                    </summary>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">児童・生徒が意欲をもって<br>学べる実践的な場を提供したい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs03.png" alt=""></figure>
+                    </summary>
+                </li>
+            </ul>
+            <h3 class="attention">キッザニアは、キャリア教育やSDGs・英語教育のプログラムも用意しており、<br>こども達の「生きる力」を育むご提案に最適です。</h3>
+        </div>
+    </section>
+
+    <section class="program symmetry">
+        
+        <div class="program__wrap">
+            <div class="containers">
+                <h2 class="ttl-secondary">キャリア教育実践プログラム</h2>
+                <div class="flex aiC item">
+                    <figure class="item__img"><img src="../assets/img/group/agency/img-agency01.png" alt=""></figure>
+                    <summary class="item__box">
+                        <h3 class="item__box--ttl">「働く」イメージを具体化させる</h3>
+                        <h4 class="item__box--txt">１日の体験学習のみで終わらせることなく、体系的な学習にしていただくために、キッザニアでの体験と連動した事前・事後学習用教材を提供しています。<br>
+                        <br>
+                        一連の流れの中で、こども達にとって漠然としていた「働く」イメージがより鮮明になります。
+                        実体験を通じて、自分の将来についての考えを深めることができるプログラムです。<br>
+                        <br>
+                        ※ご予約いただいた学校団体の方に提供しております。
+                        ※中学校団体の方には、さらに自己理解を深めるための「オプション教材」を提案しております。</h4>
+                    </summary>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+        </div>
+
+
+        <div class="program__wrap">
+            <div class="containers">
+                <h2 class="ttl-secondary">KidZania SDGs プログラム with School</h2>
+                <div class="flex aiC sp-reverse item">
+                    <summary class="item__box">
+                        <h3 class="item__box--ttl">「働く」体験を通じてSDGsを考える</h3>
+                        <h4 class="item__box--txt">よりよい未来を創るために、自分には何ができるのかを考える、キッザニアでの体験と連動した事前・事後学習用教材を提供しています。<br><br>
+                        一連の流れの中で、「世界の未来」を自分事化して考えられるようになります。
+                        SDGs視点で主体的に物事を考えるきっかけとなるプログラムです。<br>
+                        <br>
+                        ※ご予約いただいた学校団体の方に提供しております。
+                        </h4>
+                    </summary>
+                    <figure class="item__img"><img src="../assets/img/group/agency/img-agency02.png" alt=""></figure>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+        </div>
+            
+        <div class="program__wrap">
+            <div class="containers">
+                <h2 class="ttl-secondary">My English Program</h2>
+                <div class="flex aiC item">
+                    <figure class="item__img"><img src="../assets/img/group/agency/img-agency03.png" alt=""></figure>
+                    <summary class="item__box">
+                        <h3 class="item__box--ttl">楽しく英語に触れる</h3>
+                        <h4 class="item__box--txt">学校の授業で習った英語をキッザニアで実践するワークシートを提供しています。
+                            普段とは異なる環境で積極的に英語に触れる３つのプログラムです。<br>
+                            <br>
+                            ※実施内容は施設によって異なりますので、詳しくはご希望の施設にお問い合わせください。<br>
+                            ※キッザニア東京、キッザニア甲子園では、毎週水曜日に約半数のアクティビティを英語で行う「English Wednesday」を実施しています。</h4>
+                    </summary>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <section class="place">
+        <div class="containers">
+            <h2 class="ttl-secondary">各拠点のご紹介</h2>
+            <div class="item flex">
+                <dl class="item__box">
+                    <dt class="bg-orange"><h3 class="item__box--ttl">キッザニア東京・キッザニア甲子園</h3></dt>
+                    <dd class="bg-gray">
+                        <h4 class="item__box--txt">
+                            <em>第1部 　 9:00～15:00<span class="pc-only">／</span><span class="sp-only">　</span><br class="sp-only">第2部 　 16:00～21:00</em>
+                            <span>※第1部・第2部は完全入れ替え制です。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl class="item__box">
+                    <dt class="bg-light-orange"><h3 class="item__box--ttl">キッザニア福岡</h3></dt>
+                    <dd class="bg-light-gray">
+                        <h4 class="item__box--txt">
+                            <div class="item__box--inner">
+                                <div class="item__box--wrap"><small>（平日）</small><em>9:00～17:00</em></div>
+                                <div class="item__box--wrap"><small>（休日・H.S）</small><em>第1部　9:00～14:30<br>第2部　15:30～20:00</em></div>
+                            </div>
+                            <span>※日によって営業時間が異なる場合があります。<br>※営業時間の30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+            <a href="../catalog/catalog-general.html" class="more border-red">一般団体向け資料ダウンロード</a>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="../contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="../visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="../visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="../visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="../reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

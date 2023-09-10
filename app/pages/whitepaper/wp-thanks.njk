@@ -1,0 +1,39 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "資料をダウンロードいただき、ありがとうございました。" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# noindex/nofollow #}
+{% set noindex = true %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main class="thanks">
+  <section>
+    <div class="containers">
+
+      <h1 class="ttl-primary-lower">資料をダウンロードいただき、<br class="sp-only">ありがとうございました。</h1>
+      <div class="lead">入力いただきましたメールアドレス宛に<br>資料のダウンロード用URLを送信させて<br class="sp-only">いただきました。<br>※メールが届くまでに15～30分かかる場合があります。</div>
+
+      <a href="../index.html" class="more to-page-blue">トップページに戻る</a>
+
+    </div>
+  </section>
+</main>
+{% endblock %}

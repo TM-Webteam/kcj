@@ -1,10 +1,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <meta name="keywords" content="">
-<meta name="description" content="{% if description %}{{ description }}{% else %}ディスクリプション{% endif %}">
+<meta name="description" content="{% if description %}{{ description }}{% else %}{% endif %}">
 <meta name="author" content="">
-<title>{% if title %}{{ title }} | {% endif %}サイトタイトル</title>
+<title>{% if title %}{{ title }} | {% endif %}キッザニア(KidZania)団体向けサイト</title>
 <meta name="format-detection" content="telephone=no">
 
 <!-- Schema.org markup for Google+ -->
@@ -13,22 +14,24 @@
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}サイトタイトル">
-<meta name="twitter:image:src" content="">
+<meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}キッザニア(KidZania)団体向けサイト">
+<!-- <meta name="twitter:image:src" content=""> -->
 
 <!-- Open Graph data -->
-<meta property="og:title" content="{% if title %}{{ title }} | {% endif %}サイトタイトル">
-<meta property="og:description" content="{% if description %}{{ description }}{% else %}ディスクリプション{% endif %}">
+<meta property="og:title" content="{% if title %}{{ title }} | {% endif %}キッザニア(KidZania)団体向けサイト">
+<meta property="og:description" content="{% if description %}{{ description }}{% else %}{% endif %}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="">
-<meta property="og:image" content="">
-<meta property="og:image:width" content="">
-<meta property="og:image:height" content="">
-<meta property="og:site_name" content="">
+<meta property="og:url" content="https://www.kidzania.jp/">
+<!-- <meta property="og:image" content=""> -->
+<meta property="og:site_name" content="団体でご利用される方へ｜キッザニア(KidZania)団体向けサイト">
 
 <!-- Web font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/ncf8fus.css">
 
 <!-- Style sheet -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="{{ path }}assets/css/main.css">
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {w[l] = w[l] || []; w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'}); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', 'GTM-5M3N5X5H');</script>
+<!-- End Google Tag Manager -->

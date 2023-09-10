@@ -1,0 +1,53 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "団体利用に関するお問い合わせ" %}
+{% set description = "キッザニアの団体利用に関するお問い合わせ・ご相談はお気軽にご連絡ください。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "./" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="contact">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">団体利用に関するお問い合わせ</h1>
+                <h2 class="hero__lead">キッザニアの団体利用に関するお問い合わせ・ご相談はお気軽にご連絡ください。</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="containers">
+            <div class="form__note">
+                <p>● 以下フォームにご連絡先、お問い合わせ内容をご記入の上、送信してください。担当よりご連絡申し上げます。<br>
+                    ● 回答までにお時間をいただく場合や、回答ができない場合もございますので、ご了承ください。
+                </p>
+            </div>
+
+            <!-- cms embed tag -->
+            <div id="bdash_embed_form_container_prd_1629_4">
+                <script type="text/javascript" src="https://cms.smart-bdash.com/1629/embed_tags/4/generate_iframe.js"
+                    charset="UTF-8"></script>
+            </div>
+            <!-- end cms embed tag -->
+        </div>
+
+    </section>
+</main>
+{% endblock %}

@@ -2,13 +2,29 @@
 	<div class="in">
 		<div class="flex inherit">
 			<div class="in__logo">
-				<a href="/" class="in__logo__img"><img src="/assets/img/common/logo.svg" alt="KidZania Japan"></a>
+				<a href="https://www.kidzania.jp/group_info/index.html" class="in__logo__img"><img src="{{ path }}assets/img/common/logo.svg" alt="KidZania Japan"></a>
 			</div>
 			<nav class="in__nav pc-only">
 				<ul class="flex">
-					<li><a href="/whitepaper/">お問い合わせ</a></li>
-					<li><a href="/visit/">施設見学申し込み</a></li>
-					<li><a href="/reserve/">団体予約</a></li>
+					<li><a href="{{ path }}contact.html">お問い合わせ</a></li>
+					<li class="parent">
+						<a href="{{ path }}" class="disabled">施設見学申し込み</a>
+						<div class="mega flex pull">
+							<div class="mega__parent">施設見学申し込み</div>
+							<div class="mega__box flex">
+								<div class="mega__box--list">
+									<a href="{{ path }}visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+								</div>
+								<div class="mega__box--list">
+									<a href="{{ path }}visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+								</div>
+								<div class="mega__box--list">
+									<a href="{{ path }}visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="{{ path }}reserve.html">団体予約</a></li>
 				</ul>
 			</nav>
 			<div id="nav-toggle" class="sp-only">
@@ -20,70 +36,102 @@
 	</div>
 	<div class="nav-list pc-only">
 		<ul class="flex">
-			<li><a href="/about/">キッザニアとは</a></li>
-			<li><a href="/school/">学校団体様へ</a></li>
-			<li><a href="/general/">一般団体様へ</a></li>
-			<li><a href="/agency/">旅行代理店様へ</a></li>
+			<li><a href="{{ path }}about.html">キッザニアとは</a></li>
+			<li><a href="{{ path }}group/school.html">学校団体</a></li>
+			<li><a href="{{ path }}group/general.html">一般団体（20名以上）</a></li>
+			<li><a href="{{ path }}group/agency.html">旅行代理店</a></li>
 			<li class="parent">
-				<a href="#" class="arrow disabled">資料ダウンロード</a>
+				<a href="{{ path }}" class="arrow disabled">資料ダウンロード</a>
 				<div class="mega flex pull">
-				  <div class="mega__parent">資料ダウンロード</div>
-				  <div class="mega__box flex">
-					<div class="mega__box--list">
-					  <a href="#" class="ttl">学校団体様向けキッザニア概要資料</a>
+					<div class="mega__parent">資料ダウンロード</div>
+					<div class="mega__box flex">
+						<div class="mega__box--list">
+							<a href="{{ path }}catalog/catalog-school.html" class="ttl">料金案内、予約方法、1日の流れなどの<br><b>学校団体向け資料ダウンロード</b></a>
+						</div>
+						<div class="mega__box--list">
+							<a href="{{ path }}catalog/catalog-general.html" class="ttl">料金案内、ご利用案内などの<br><b>一般団体(20名以上)向け資料ダウンロード</b></a>
+						</div>
 					</div>
-					<div class="mega__box--list">
-					  <a href="#" class="ttl">キャリア教育実践プログラム</a>
-					</div>
-					<div class="mega__box--list">
-					  <a href="#" class="ttl">英語教育支援プログラム</a>
-					</div>
-					<div class="mega__box--list">
-					  <a href="#" class="ttl">一般団体様向けキッザニア概要資料</a>
-					</div>
-					<div class="mega__box--list">
-					  <a href="#" class="ttl">SDGs教育プログラム</a>
-					</div>
-				  </div>
 				</div>
-			  </li>
-			  <li class="parent">
-				<a href="/column/" class="arrow disabled">お役立ち情報</a>
+			</li>
+			<li class="parent">
+				<a href="{{ path }}" class="arrow disabled">お役立ち情報</a>
 				<div class="mega flex pull">
-				  <div class="mega__parent">お役立ち情報</div>
-				  <div class="mega__box flex">
-					<div class="mega__box--list">
-					  <a href="/case/" class="ttl">実績・事例</a>
+					<div class="mega__parent">お役立ち情報</div>
+					<div class="mega__box flex">
+						<div class="mega__box--list">
+							<a href="{{ path }}case.html" class="ttl">実績・事例</a>
+						</div>
+						<!-- <div class="mega__box--list">
+							<a href="{{ path }}whitepaper/wp1/" class="ttl">お役立ち資料</a>
+						</div> -->
+						<div class="mega__box--list">
+							<a href="{{ path }}column/index.html" class="ttl">お役立ちコラム</a>
+						</div>
 					</div>
-					<div class="mega__box--list">
-					  <a href="/catalog/" class="ttl">お役立ち資料</a>
-					</div>
-					<div class="mega__box--list">
-					  <a href="/faq/" class="ttl">よくあるご質問</a>
-					</div>
-					<div class="mega__box--list">
-					  <a href="/column/" class="ttl">お役立ちコラム</a>
-					</div>
-				  </div>
 				</div>
-			  </li>
-			<li><a href="https://www.kidzania.jp/corporate/" target="_blank">企業情報</a></li>
+			</li>
+			<li><a href="{{ path }}faq.html">よくあるご質問</a></li>
 		</ul>
 	</div>
 	<div id="gloval-nav">
-		<ul class="list">
-			<li><a href="/about/">キッザニアとは</a></li>
-			<li><a href="/school/">学校団体様へ</a></li>
-			<li><a href="/general/">一般団体様へ</a></li>
-			<li><a href="/agency/">旅行代理店様へ</a></li>
-			<li><a href="/catalog/">資料ダウンロード</a></li>
-			<li><a href="/column/">お役立ち情報</a></li>
-			<li><a href="https://www.kidzania.jp/corporate/" target="_blank">企業情報</a></li>
-		</ul>
-		<ul class="aside">
-			<li><a href="/whitepaper/">お問い合わせ</a></li>
-			<li><a href="/visit/">施設見学申し込み</a></li>
-			<li><a href="/reserve/">団体予約</a></li>
-		</ul>
+		<div class="scroll-fix">
+			<ul class="list">
+				<li><a href="{{ path }}about.html">キッザニアとは</a></li>
+				<li><a href="{{ path }}group/school.html">学校団体</a></li>
+				<li><a href="{{ path }}group/general.html">一般団体（20名以上）</a></li>
+				<li><a href="{{ path }}group/agency.html">旅行代理店</a></li>
+				<li class="parent">
+					<a href="{{ path }}" class="arrow disabled">資料ダウンロード</a>
+					<div class="mega flex pull">
+						<div class="mega__box flex">
+							<div class="mega__box--list">
+								<a href="{{ path }}catalog/catalog-school.html" class="ttl">料金案内、予約方法、1日の流れなどの<br><b>学校団体向け資料ダウンロード</b></a>
+							</div>
+							<div class="mega__box--list">
+								<a href="{{ path }}catalog/catalog-general.html" class="ttl">料金案内、ご利用案内などの<br><b>一般団体(20名以上)向け資料ダウンロード</b></a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="parent">
+					<a href="{{ path }}" class="arrow disabled">お役立ち情報</a>
+					<div class="mega flex pull">
+						<div class="mega__box flex">
+							<div class="mega__box--list">
+								<a href="{{ path }}case.html" class="ttl">実績・事例</a>
+							</div>
+							<!-- <div class="mega__box--list">
+								<a href="{{ path }}whitepaper/wp1/" class="ttl">お役立ち資料</a>
+							</div> -->
+							<div class="mega__box--list">
+								<a href="{{ path }}column/index.html" class="ttl">お役立ちコラム</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="{{ path }}faq.html">よくあるご質問</a></li>
+				<li class="parent">
+					<a href="{{ path }}" class="arrow disabled">施設見学申し込み</a>
+					<div class="mega flex pull">
+						<div class="mega__box flex">
+							<div class="mega__box--list">
+								<a href="{{ path }}visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+							</div>
+							<div class="mega__box--list">
+								<a href="{{ path }}visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+							</div>
+							<div class="mega__box--list">
+								<a href="{{ path }}visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="aside">
+				<li><a href="{{ path }}contact.html">お問い合わせ</a></li>
+				<li><a href="{{ path }}reserve.html">団体予約</a></li>
+			</ul>
+		</div>
 	</div>
 </header>

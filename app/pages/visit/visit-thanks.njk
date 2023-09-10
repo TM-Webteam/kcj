@@ -1,0 +1,40 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "施設見学をお申し込みいただき、ありがとうございました。" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# noindex/nofollow #}
+{% set noindex = true %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main class="thanks">
+  <section>
+    <div class="containers">
+
+      <h1 class="ttl-primary-lower">施設見学をお申し込みいただき、<br class="sp-only">ありがとうございました。</h1>
+
+      <div class="lead">日程につきましては、後日担当者よりお電話にてご連絡いたします。</div>
+
+      <a href="../index.html" class="more to-page-blue">トップページに戻る</a>
+
+    </div>
+  </section>
+</main>
+{% endblock %}

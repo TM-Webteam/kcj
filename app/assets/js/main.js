@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //---------------------------------
   // SP時横スクロール UI
   //---------------------------------
@@ -9,17 +9,17 @@ $(document).ready(function() {
     }
   });
 
-  
+
   //---------------------------------
   // Smooth Scrolling
   //---------------------------------
 
-  $('a[href^="#"]').click(function(){
+  $('a[href^="#"]').click(function () {
 
     var the_id = $(this).attr("href");
 
     $('html, body').animate({
-      scrollTop:$(the_id).offset().top-50
+      scrollTop: $(the_id).offset().top - 50
     }, 'slow');
 
     return false;
@@ -45,14 +45,14 @@ $(document).ready(function() {
 //　header　演出
 //--------------------------------------
 
-$(function(){
+$(function () {
   var pos = 0;
   var header = $('header');
-  
-  $(window).on('scroll', function(){
-    if($(this).scrollTop() < pos || $(this).scrollTop() < 400){
+
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
       header.removeClass('hide');
-    }else{
+    } else {
       header.addClass('hide');
     }
     pos = $(this).scrollTop();
@@ -77,22 +77,22 @@ $(function(){
 //--------------------------------------
 //　アニメーション　ふわっと演出
 //--------------------------------------
-window.onload = function() {
+window.onload = function () {
   scroll_effect();
 
-  $(window).scroll(function(){
-   scroll_effect();
+  $(window).scroll(function () {
+    scroll_effect();
   });
 
-  function scroll_effect(){
-   $('.fadein').each(function(){
-    var elemPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > elemPos - windowHeight){
-     $(this).addClass('scrollin');
-    }
-   });
+  function scroll_effect() {
+    $('.fadein').each(function () {
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight) {
+        $(this).addClass('scrollin');
+      }
+    });
   }
 };
 
@@ -101,29 +101,29 @@ window.onload = function() {
 //　loop-slick
 //--------------------------------------
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#loop-slick').slick({
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 1,
-      cssEase: 'linear',
-      speed: 5000,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 769, // 768px以下のサイズに適用
-          settings: {
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1,
+    cssEase: 'linear',
+    speed: 5000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 769, // 768px以下のサイズに適用
+        settings: {
           slidesToShow: 4,
-          },
         },
-        {
-          breakpoint: 400, // 399px以下のサイズに適用
-          settings: {
+      },
+      {
+        breakpoint: 400, // 399px以下のサイズに適用
+        settings: {
           slidesToShow: 2,
-          },
         },
-      ],
+      },
+    ],
   });
 });
 
@@ -132,7 +132,7 @@ $(document).ready(function() {
 //　wp-slick
 //--------------------------------------
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#wp-slick').slick({
     arrows: true,
     autoplay: true,
@@ -147,10 +147,17 @@ $(document).ready(function() {
 //　faq　プルダウン
 //--------------------------------------
 
-$(document).ready(function(){
-  $(".question").on("click", function() {
+$(document).ready(function () {
+  $(".question").on("click", function () {
     $(this).toggleClass('open');
     $(this).next().slideToggle(400);
+  });
+});
+
+$(document).ready(function () {
+  $(".js-pull-down-btn").on("click", function () {
+    $(this).toggleClass('open');
+    $(this).next(".js-pull-down-contents").slideToggle(400);
   });
 });
 
@@ -159,12 +166,12 @@ $(document).ready(function(){
 //　バナー　追従
 //--------------------------------------
 
-$(function(){
+$(function () {
   var scrollStart = $('.show').offset().top;
   var scrollEnd = $('.hide').offset().top;
   var distance = 0;
 
-  $(document).scroll(function(){
+  $(document).scroll(function () {
     distance = $(this).scrollTop();
 
     if (scrollStart <= distance) {
@@ -175,8 +182,20 @@ $(function(){
 
     if (scrollEnd <= distance) {
       $('.floating').fadeOut();
-    } else{
+    } else {
       $('.floating').fadeIn();
     }
-  });      
+  });
 });
+
+
+$(function () {
+  if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)) {
+    $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
+  } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+    $('head').prepend('<meta name="viewport" content="width=1440">');
+  } else if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1 && typeof document.ontouchstart !== 'undefined') {
+    $('head').prepend('<meta name="viewport" content="width=1440">');
+  }
+});
+

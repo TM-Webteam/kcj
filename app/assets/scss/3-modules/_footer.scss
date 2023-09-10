@@ -7,8 +7,9 @@ footer {
   background: #212529;
   color: #FFF;
   .containers.nav {
-    width: 1100px;
-    padding: 60px 0 50px;
+    width: 1140px;
+    max-width: 100%;
+    padding: 60px 20px 50px;
     @media #{$sp} {
       width: 100%;
       padding: 30px 15px 20px;

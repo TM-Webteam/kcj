@@ -31,3 +31,22 @@
   }
 }
 
+
+header {
+  .sp-only {
+    @media #{$pc} {
+      display: none !important;
+    }
+    @media #{$tab} {
+      display: block !important;
+    }
+  }
+  
+  
+  .pc-only {
+    @media #{$tab} {
+      display: none !important;
+    }
+  }
+}
+

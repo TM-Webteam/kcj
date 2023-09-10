@@ -1,0 +1,328 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "学校団体の方へ" %}
+{% set description = "学校団体の方が遠足、校外学習、修学旅行などでキッザニアをご活用される際、ご提供可能な3つのプログラムをご紹介します。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="school">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <div class="speech-bubble"><span class="speech-bubble__txt">遠足、校外学習、修学旅行などをご検討中の</span></div>
+                <h1 class="ttl-primary cB">学校団体の方へ</h1>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="../reserve.html" class="more">
+                            団体予約はこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <a href="../index.html">団体TOP</a>
+        <span>></span>
+        <span>学校団体の方へ</span>
+    </section>
+
+    <section class="introduction">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニア　学校向け施設紹介</h2>
+            <div class="introduction__video">
+                <iframe src="https://www.youtube.com/embed/IneqcNHKlqc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3 class="introduction__video--caution">学校向けプログラムの紹介や教職員・生徒の<br class="sp-only">コメント等を収録しています。</h3>
+
+            <div class="item">
+                <h2 class="ttl-tertiary">キッザニアでの体験を通じて<br class="sp-only">期待できる効果</h2>
+                <div class="item__box">
+                    <dl class="flex">
+                        <dt class="item__box--ttl bg-orange"><h3>保育園・幼稚園</h3></dt>
+                        <dd class="item__box--txt bg-gray">
+                            <h4>
+                            ・やってみたいことを見つけ、夢中になって行う<br>
+                            ・与えられた仕事を最後までやり遂げる<br>
+                            ・主体的に行動し、積極的に質問する
+                            </h4>
+                        </dd>
+                        
+                    </dl>
+                    <dl class="flex">
+                        <dt class="item__box--ttl bg-light-orange"><h3>小学校<br>（低学年～中学年）</h3></dt>
+                        <dd class="item__box--txt">
+                            ・より良くするための工夫をする<br>
+                            ・仲間と協力しながら行動し、時間の管理を行う<br>
+                            ・仕事について深く知る</dd>
+                    </dl>
+                    <dl class="flex">
+                        <dt class="item__box--ttl bg-orange"><h3>小学校<br>（高学年）</h3></dt>
+                        <dd class="item__box--txt bg-gray">
+                            <h4>
+                            ・仕事に対して責任感を持つ<br>
+                            ・自分が知らないものを積極的に選択し、視野を広げる<br>
+                            ・体験したことと、生活や地域社会との関連を考える
+                            </h4>
+                        </dd>
+                    </dl>
+                    <dl class="flex">
+                        <dt class="item__box--ttl bg-light-orange"><h3>中学校</h3></dt>
+                        <dd class="item__box--txt">
+                            <h4>
+                            ・作業内容だけでなく、働くことの意義や役割に理解を示す<br>
+                            ・自分の将来について考えるきっかけを作る<br>
+                            ・新しい自分の可能性を発見する
+                            </h4>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="needs card-type2">
+        <div class="containers">
+            <h2 class="ttl-secondary">こんな学校団体の方におすすめです</h2>
+            <ul class="flex card">
+                <li class="card__wrap">
+                    <a href="#career">
+                        <h3 class="card__wrap--ttl">実践的なキャリア教育の<br>機会を持ちたい</h3>
+                        <summary class="card__box">
+                            <figure class="card__box--img"><img src="../assets/img/top/img-needs01.png" alt="実践的なキャリア教育の機会を持ちたい"></figure>
+                        </summary>
+                    </a>
+                </li>
+                <li class="card__wrap">
+                    <a href="#sdgs">
+                        <h3 class="card__wrap--ttl">SDGsを自分事として考える<br>機会を作りたい</h3>
+                        <summary class="card__box">
+                            <figure class="card__box--img"><img src="../assets/img/top/img-needs02.png" alt="SDGsを自分事として考える機会を作りたい"></figure>
+                        </summary>
+                    </a>
+                </li>
+                <li class="card__wrap">
+                    <a href="#english">
+                        <h3 class="card__wrap--ttl">楽しみながら実用的な英語を<br>学ぶ機会を作りたい</h3>
+                        <summary class="card__box">
+                            <figure class="card__box--img"><img src="../assets/img/top/img-needs03.png" alt="楽しみながら実用的な英語を学ぶ機会を作りたい"></figure>
+                        </summary>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="school-program">
+        <div class="containers">
+            <h2 class="ttl-secondary">学校団体の方向けプログラム</h2>
+            
+            <div id="career" class="item">
+                <h3 class="ttl-tertiary">キャリア教育実践プログラム</h3>
+                <div class="item__box item__box--wrap flex aiC">
+                    <dl class="item__box--inner">
+                        <dt>
+                            <h3 class="item__box--ttl">「働く」イメージを具体化させる</h3>
+                        </dt>
+                        <dd>
+                            <h4 class="item__box--txt">１日の体験学習のみで終わらせることなく、体系的な学習にしていただくために、キッザニアでの体験と連動した事前・事後学習用教材を提供しています。
+                            </h4>
+                        </dd>
+                        <dd class="item__box--doc">
+                            <ul class="item__box--list">
+                                <li><h4><span>01.</span>事前学習：「働く」イメージを具体化させる</h4></li>
+                                <li><h4><span>02.</span>ご来場時：実際に「働く」体験をする</h4></li>
+                                <li><h4><span>03.</span>事後学習：体験したことを言葉にして共有する</h4></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <figure class="item__box--img"><img src="../assets/img/group/school/img-school01.png" alt="キッザニアはキャリア教育を応援しています。"></figure>
+                </div>
+                <div class="item__box item__box--wrap flex">
+                    <div class="item__box--video">
+                        <iframe src="https://www.youtube.com/embed/kGaU53eHmNA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="item__box--doc">
+                        <h4 class="item__box--txt">一連の流れの中で、こども達にとって漠然としていた「働く」イメージがより鮮明になります。
+                            実体験を通じて、自分の将来についての考えを深めることができるプログラムです。<br>
+                            <br>
+                            ※ご予約いただいた学校団体の方に提供しております。<br>
+                            ※中学校団体の方には、さらに自己理解を深めるための「オプション教材」を提案しております。
+                        </h4>
+                    </div>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+
+            <div id="sdgs" class="item">
+                <h3 class="ttl-tertiary">KidZania SDGs プログラム <br class="sp-only">with School</h3>
+                <div class="item__box item__box--sdgs flex aiC">
+                    <dl class="item__box--inner">
+                        <dt>
+                            <h3 class="item__box--ttl">「働く」体験を通じてSDGsを考える</h3>
+                        </dt>
+                        <dd>
+                            <h4 class="item__box--txt">よりよい未来を創るために、自分には何ができるのかを考える、
+                                キッザニアでの体験と連動した事前・事後学習用教材を提供しています。                                
+                            </h4>
+                        </dd>
+                        <dd class="item__box--doc">
+                            <ul class="item__box--list">
+                                <li><h4><span>01.</span>事前学習：世界に目を向けて社会の課題を知る</h4></li>
+                                <li><h4><span>02.</span>ご来場時：実際に「働く」体験をする</h4></li>
+                                <li><h4><span>03.</span>事後学習：自分が働く未来を考える</h4></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <figure class="item__box--img item__box--img--sdgs"><img src="../assets/img/group/school/img-school02.png" alt="「働く」体験を通じてSDGsを考える"></figure>
+                </div>
+                <div class="item__box item__box--wrap flex aiC">
+                    <figure class="item__box--img--sdgs"><img src="../assets/img/group/school/img-school03.png" alt="SDGsプログラム　ワークシート"></figure>
+                    <div class="item__box--doc">
+                        <h4 class="item__box--txt">一連の流れの中で、「世界の未来」を自分事化して考えられるようになります。SDGs視点で主体的に物事を考えるきっかけとなるプログラムです。<br>
+                            <br>※ご予約いただいた学校団体の方に提供しております。</h4>
+                    </div>
+                </div>
+
+                <h3 class="ttl-tertiary--border"><span>実際にご利用いただいた<br class="sp-only">先生方の声</span></h3>
+                <div class="item__box item__box--wrap">
+                    <h4 class="item__box--txt item__box--txt--sdgs">
+                        <em>＜中学生の先生からのコメント＞</em>
+                        <span>「働く」体験を通して、キャリア教育とSDGs視点の両方の学びが叶うのは教師としてもありがたいです！</span>
+                        <span>今後、働き方や生き方も変化する中、「働く」体験を通して自分が未来を創る視点を持つところが面白いプログラムだと思いました</span>
+                        <span>SDGsに関する授業をどう進めていこうか迷っていたため、こういったパッケージのプログラムがあると、使いやすい！</span>
+                        <span>体験を通して、社会を知り自分事として考えるきっかけになる</span>
+                        <span>地理の学習と結びつけながら進める等、教科横断的な視点で使えると思う</span>
+                    </h4>
+                    <h4 class="item__box--txt item__box--txt--sdgs">
+                        <em>＜小学校の先生からのコメント＞</em>
+                        <span>小学生でも取り組みやすいプログラムで、「大人になったら…」と夢を膨らませるだけでなく<br>
+                        自分たちが大人になった時の地球環境、社会的背景も考えていけるのはいいですね！</span>
+                        <span>SDGsを柱として年間の学習計画をたてる際、このプログラムを活用しようと思った</span>
+                        <span>体験を通して自分を見つめ、それを他人と共有しながら未来を考えられるプログラムですね</span>
+                        <span>「働く」体験が架け橋となり、SDGsとこどもを繋ぐプログラムだと思いました</span>
+                    </h4>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+
+            <div id="english" class="item">
+                <h3 class="ttl-tertiary">My English Program</h3>
+                <div class="item__box item__box--wrap flex aiC">
+                    <dl class="item__box--inner">
+                        <dt>
+                            <h3 class="item__box--ttl">楽しく英語に触れる</h3>
+                        </dt>
+                        <dd>
+                            <h4 class="item__box--txt">学校の授業で習った英語をキッザニアで実践するワークシートを提供しています。</h4>
+                        </dd>
+                        <dd class="item__box--doc">
+                            <ul class="item__box--list">
+                                <li><h4><span>01.</span>事前学習：普段の英語の授業で基本的なあいさつ表現を学ぶ</h4></li>
+                                <li><h4><span>02.</span>ご来場時：体験の合間にワークシートを進める</h4></li>
+                                <li><h4><span>03.</span>事後学習：成果や気づきを発表し合う</h4></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="item__box--video">
+                        <iframe src="https://www.youtube.com/embed/NbSJ3HktThU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="item__box item__box--wrap flex aiC">
+                    <figure class="item__box--img"><img src="../assets/img/group/school/img-school04.png" alt="普段とは異なる環境で積極的に英語に触れる３つのプログラムです。"></figure>
+                    <div class="item__box--doc">
+                        <h4 class="item__box--txt">普段とは異なる環境で積極的に英語に触れる３つのプログラムです。<br>
+                            <br>
+                            ※実施内容は施設によって異なりますので、詳しくはご希望の施設にお問い合わせください。<br>
+                            ※キッザニア東京、キッザニア甲子園では、毎週水曜日に約半数のアクティビティを英語で行う「English Wednesday」を実施しています。</h4>
+                    </div>
+                </div>
+                <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="place">
+        <div class="containers">
+            <h2 class="ttl-secondary">各拠点のご紹介</h2>
+            <div class="item flex">
+                <dl class="item__box">
+                    <dt class="bg-orange"><h3 class="item__box--ttl">キッザニア東京・キッザニア甲子園</h3></dt>
+                    <dd class="bg-gray">
+                        <h4 class="item__box--txt">
+                            <em>第1部 　 9:00～15:00<span class="pc-only">／</span><span class="sp-only">　</span><br class="sp-only">第2部 　 16:00～21:00</em>
+                            <span>※第1部・第2部は完全入れ替え制です。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl class="item__box">
+                    <dt class="bg-light-orange"><h3 class="item__box--ttl">キッザニア福岡</h3></dt>
+                    <dd class="bg-light-gray">
+                        <h4 class="item__box--txt">
+                            <em>1部制 　 9:00～17:00</em>
+                            <span>※平日のみのご案内となります。</span>
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+            
+            <a href="../catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="../contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="../visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="../visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="../visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="../reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
