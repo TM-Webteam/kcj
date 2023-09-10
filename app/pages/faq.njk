@@ -1,0 +1,581 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "よくあるご質問" %}
+{% set description = "キッザニア利用に関するよくあるご質問をまとめました。お問い合わせ前に、ぜひご参考にしてください。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "./" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="faq">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">よくあるご質問</h1>
+                <h2 class="hero__lead cB">お問い合わせの前に、ぜひご参考にしてください。</h2>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="./catalog/catalog-school.html" class="more">
+                            学校団体向け資料ダウンロード
+                        </a>
+                        <a href="./catalog/catalog-general.html" class="more border-red">
+                            一般団体向け資料ダウンロード
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <a href="./">団体TOP</a>
+        <span>></span>
+        <span>よくあるご質問</span>
+    </section>
+
+    <section class="anc">
+        <div class="containers">
+            <ul class="flex jcC gap30 inherit anc__box">
+                <li><a href="#faq01">入場予約</a></li>
+                <li><a href="#faq02">入退場</a></li>
+                <li><a href="#faq03">食事・持ち込み</a></li>
+                <li><a href="#faq04">アレルギー対応</a></li>
+                <li><a href="#faq05">過ごし方・アクティビティ</a></li>
+                <li><a href="#faq06">アクセス・駐車場</a></li>
+                <li><a href="#faq07">団体向け学習プログラム</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="faq-all">
+        <div id="faq01" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">入場予約</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">キッザニアの施設見学や下見はできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            施設内や当日の過ごし方等をスタッフがご案内いたします。<br>
+                            すでに予約をいただいている団体の方はもちろん、ご検討中の団体の方もご活用ください。<br>
+                            なお、お子さま同伴での見学・下見はご遠慮いただいております。
+                        </h4>
+                            <a href="./visit/visit-tokyo.html" class="more">キッザニア東京 <br class="sp-only">施設見学申し込みはこちら</a>
+                            <a href="./visit/visit-koshien.html" class="more">キッザニア甲子園 <br class="sp-only">施設見学申し込みはこちら</a>
+                            <a href="./visit/visit-fukuoka.html" class="more">キッザニア福岡 <br class="sp-only">施設見学申し込みはこちら</a>
+                    </dd>
+                </dl>
+            
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">団体予約はどのくらい先まで可能ですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            キッザニア東京、キッザニア甲子園の入場予約は以下の期限までご予約が可能です。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【第1部（9:00～15:00）】</b>
+                            　・学校団体の方：2年先まで<br>
+                            　・一般団体の方：1年先まで
+                            <hr>
+                            <b>【第2部（16:00～21:00）】</b>
+                            　・お問い合わせからご相談ください。
+                        </h4>
+                        <h4 class="faq-all__txt">
+                            キッザニア福岡の入場予約は以下の期限までご予約が可能です。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>
+                            　・学校団体の方：2年先まで<br>
+                            　・一般団体の方：1年先まで</b>
+                            <p class="faq-all__txt--caution">
+                                　※平日は9:00～17:00までの１部制、休日・ホリデーシーズン（H.S）は2部制となります。<br>
+                                　※学校団体の方は平日のみのご案内となります。
+                            </p>
+                        </h4>
+                    </dd>
+                </dl>
+            
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">予約後の人数変更・キャンセルはいつまでできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            ご来場日の3週間前（来場日前日から起算）までは無料で人数変更・キャンセルを承れますが、最終人数確定後はキャンセルできません。<br>確定後のキャンセルは、お客様に下記料金をお支払いいただきます。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【全てキャンセルされる場合】</b>
+                            　最終確定人数の入場料金とフードチケット料金の全額
+                            <hr>
+                            <b>【一部キャンセル（減員）の場合】</b>
+                            　お一人さま210円（税込）のキャンセル料
+                        </h4>
+                        <h4 class="faq-all__txt--caution">
+                            　※日程変更についてはご相談ください。<br>
+                            　※フードチケットは、キャンセルおよびご返金ができかねます。
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">混みあわない時期はありますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            新年度初めや長期休みの前後は比較的ご案内しやすい時期になります。<br>学校団体の方は2年先までご予約可能ですので、お早めのご予約をおすすめしております。
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">学校団体の対象を教えてください。</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            文部科学省の認可を受けている教育機関（幼稚園・小学校・中学校・特別支援学校）、認可保育園、認可外保育園・こども園（3歳以上）、および外国人学校が対象となります。<br>また、学校団体の方につきましては、お早めのご予約をおすすめしております。
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">一般団体の対象を教えてください。</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            ご予約人数が20名以上の場合、一般団体の対象となります。<br>
+                            こども会や学童保育、英会話スクールやスイミングスクールなど、<br>
+                            様々な団体の方にご利用いただいております。遠足やお別れ会などの行事にご活用ください。<br>
+                            また、企業様の福利厚生やイベントにもご活用いただけます。
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq02" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">入退場</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">一時退場はできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            大人の一時退場は可能です。<br>
+                            一時退場可能時間は退場時間の30分前までです。<br>
+                            団体の方におかれましては、グループ内の大人の方1名は常時施設内でご待機いただくようお願いいたします。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">入場時間・退場時間に決まりはありますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            営業時間内であれば、団体の方のご都合に合わせた時間にご入退場が可能です。<br>※ご予約時にご希望の入退場時刻を伺っております。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア東京・キッザニア甲子園】<br>
+                                　・第1部　9:00～15:00<br>
+                                　・第2部　16:00～21:00
+                            </b>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア福岡】<br>
+                                　・平日　9:00～17:00<br>
+                                　・学校団体の方　最大6時間滞在可能
+                            </b>
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">キッザニア来場日に他施設の利用も考えています。<br>来場のタイミングは他施設利用の前と後、どちらがよいでしょうか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            体験の受付が先着順のため、他施設利用前にご来場いただくことをおすすめします。<br>（例）9:00～13:30　キッザニア東京での体験・昼食→14:00～　他施設を見学
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq03" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">食事・持ち込み</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">お弁当や水筒など、持ち込めるものはありますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            衛生管理上、お弁当やおやつなど食べ物およびペットボトルなどの飲料のお持ち込みはできません。<br>ただし、アレルギー除去食、離乳食、水筒のお持ち込みは可能です。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">食事はどうすればよいですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            施設内の各飲食店にて好きなものを当日購入していただけます。<br>
+                            ご希望の団体の方には、フードチケット（別途料金、要事前申し込み）をご用意しております。<br>
+                            （フードチケットメニューは、チケットなしでの当日購入はできませんのでご了承ください。）<br>
+                            <br>
+                            食事は各自フードコートにて体験の合間にお召し上がりください。<br>
+                            ※食事スペースの確保は行っておりません。フードコートの座席のお取り置きはご遠慮ください。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア東京】</b>
+                            飲食店（RF1、シャウエッセン、ピザーラエクスプレス、モスバーガー）をご利用ください。<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_t.pdf" class="pdf" target="_blank">東京フードチケットメニューはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア甲子園】</b>
+                            飲食店（RF1、シャウエッセン、ドンク、ピザーラエクスプレス）をご利用ください。<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_k.pdf" class="pdf" target="_blank">甲子園フードチケットメニューはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア福岡】</b>
+                            飲食店（RF1、ピザーラエクスプレス、宮武讃岐うどん）をご利用ください。<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_f.pdf" class="pdf" target="_blank">福岡フードチケットメニューはこちら</a>
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq04" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">アレルギー対応</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">食物アレルギーがあるこどもも飲食系のアクティビティを体験可能ですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            食品を扱うパビリオンでは、スタッフ（スーパーバイザー）が口頭でアレルギー成分の確認をしています。パビリオンでの使用食品に含まれるアレルゲンをお持ちの方は、体験をお断りさせていただきます。<br>ただし当日、親権者または保護者（引率者代表又は親権者から了解を得ている引率者）がお子さまのアレルギー状況から体験可能と判断し、同意書にご署名いただいた場合に限り、体験することができます。「同意書」につきましては、突然のメニュー変更・アレルギー情報の変更もございますので、ご来場当日に各飲食系のパビリオンにて都度、ご確認・ご署名をいただいております。<br>詳しくは、アレルギー情報をご確認ください。
+                            <br><br>
+                            <a href="https://www.kidzania.jp/sites/default/files/2021-10/tokyo_allergy_information_pv.pdf"  class="pdf" target="_blank">キッザニア東京のアレルギー情報はこちら</a><br>
+                            <a href="https://www.kidzania.jp/sites/default/files/2021-10/koshien_allergy_information_pv.pdf"  class="pdf" target="_blank">キッザニア甲子園のアレルギー情報はこちら</a><br>
+                            <a href="https://www.kidzania.jp/sites/default/files/2022-07/fukuoka_allergy_information_pv.pdf"  class="pdf" target="_blank">キッザニア福岡のアレルギー情報はこちら</a>
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">食物アレルギーがあるこどもの昼食はどうすればよいですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            フードチケットをご利用の場合は、低アレルゲンメニューへのご変更が可能です。<br>また、アレルギー除去食や宗教対応食のお持ち込みも可能です。いずれの場合も必ず事前にご相談ください。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア東京】</b>
+                            　低アレルゲンメニュー：モスバーガー<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_t.pdf" class="pdf" target="_blank">東京フードチケットメニューはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア甲子園】</b>
+                            　低アレルゲンメニュー：保護者ラウンジでご提供<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_k.pdf" class="pdf" target="_blank">甲子園フードチケットメニューはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア福岡】</b>
+                            　低アレルゲンメニュー：BIG KUP COFFEE（保護者ラウンジ）でご提供<br>
+                            <a href="https://www.kidzania.jp/pdf/group/food_info_f.pdf" class="pdf" target="_blank">福岡フードチケットメニューはこちら</a>
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">感染予防・こどもの体調変化についての対応はどうなっていますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            食品を扱うパビリオンでは、手洗いとアルコール消毒をしてからアクティビティを行います。また、パビリオンによってはヘアネットや、手袋を使用しています。<br><br>
+                            施設内にある救護室に看護師が常駐しています。症状によっては近隣の病院にご案内することもできます。 お子さまが救護室を利用した際には代表者の緊急連絡先へ連絡いたします。
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq05" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">過ごし方・アクティビティ</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">当日、こども達は何を持っていけばよいですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            自分で作ったものや体験後にもらったものを入れるためのバッグがあると便利です。<br>また、来場経験のあるお子さまはキッザニアのキャッシュカード、e-kidZoカード、運転免許証、財布、キッザニア50キッゾカード（キッザニア福岡に限る）を持参されることをおすすめいたします。<br><br>
+                            キッゾ・トラベラーズチェック・運転免許証は、キッザニア東京・甲子園・福岡共通で使用可能です。<br>
+                            e-kidZoカードは、キッザニア東京・甲子園のみ使用できます。キッザニア福岡では使用できません。<br>
+                            キャッシュカードは、キッザニア東京・甲子園・福岡の銀行やATMで共通で使用でき、残高照会やキッゾの引き出しができます。<br>
+                            ただし、キッザニア福岡で入手したキャッシュカードのみデビット機能があり、キャッシュレス支払いができます。（キッザニア福岡に限る）
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">こども達はどのように活動したらよいでしょうか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            各アクティビティの定員は2～8名程度のため、グループ行動よりも少人数もしくは個人で行動することをおすすめしております。また、アクティビティ数が多いので、事前にキッザニア公式サイトなどでどんな体験があるのかご確認のうえ、計画を立てることで当日の活動が充実します。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">体験はどのくらいできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            アクティビティの体験時間は平均20～40分ですので、待ち時間も合わせて1時間に1つを体験の目安にしてください。<br>
+                            ※滞在時間や当日の混雑状況などにより変動します。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">アクティビティの受付はどのように行うのですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            入場時にお子さまにお渡しする「JOBスケジュールカード」を使って体験の受付をします。そのため入場前にアクティビティの予約をすることはできません。<br>
+                            アクティビティの予約は一つずつ取ることができます。予約したアクティビティの集合時間までは、その時間までに終わるアクティビティを体験することができます。
+
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">アクティビティに年齢制限や身長制限はありますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            アクティビティの参加対象年齢は、3~15歳です。<br>
+                            年齢に応じて楽しんでいただけるようスタッフがサポートします。<br>
+                            ※一部安全のため身長制限があります。下記をご確認ください。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア東京】</b>
+                            <div class="item">
+                                <div class="item__box">
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-orange">120㎝以上</dt>
+                                        <dd class="item__box--txt bg-gray">クライミングビルディング・ビルメンテナンス</dd>
+                                    </dl>
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-light-orange">110㎝以上</dt>
+                                        <dd class="item__box--txt">運転免許試験場・レンタカー</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア甲子園】</b>
+                            <div class="item">
+                                <div class="item__box">
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-orange">120㎝以上</dt>
+                                        <dd class="item__box--txt bg-gray">クライミングビルディング・ビルメンテナンス</dd>
+                                    </dl>
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-light-orange">110㎝以上</dt>
+                                        <dd class="item__box--txt">運転免許試験場・レンタカー・ホースパーク（乗馬体験）</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア福岡】</b>
+                            <div class="item">
+                                <div class="item__box">
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-orange">120㎝以上</dt>
+                                        <dd class="item__box--txt bg-gray">クライミングビルディング・ビルメンテナンス</dd>
+                                    </dl>
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-light-orange">110㎝以上</dt>
+                                        <dd class="item__box--txt">運転免許試験場</dd>
+                                    </dl>
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-orange">122㎝以上</dt>
+                                        <dd class="item__box--txt">配電テクニカルセンター上段</dd>
+                                    </dl>
+                                    <dl class="flex">
+                                        <dt class="item__box--ttl bg-light-orange">100cm～122cm</dt>
+                                        <dd class="item__box--txt">配電テクニカルセンター下段</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">クラス全員でひとつのアクティビティを一度に体験することはできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            アクティビティの貸切はできません。また、アクティビティの定員は2～8名程度ですので、少人数もしくは個人で行動することをおすすめしております。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">高学年専用の体験はありますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            高学年に限定した体験はございません。キッザニアはすべての年齢・学年の方に体験いただけます。<br>
+                            高学年に最適な事前・事後学習をサポートする教材を各種ご用意しておりますので、詳細はダウンロード資料よりご確認ください。<br>
+                            <a href="https://www.kidzania.jp/group_info/group/school.html" target="_blank">事前・事後学習用教材はこちらから</a>
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">引率者はどのように過ごせばよいですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            体験中のお子さまの様子をパビリオンの「ガラス越し」または「モニター越し」で見学いただけます。また、一部のパビリオンでは引率者が中に入ってアクティビティを見学することもできます。休憩時にはフードコートのほか、保護者ラウンジもご利用いただけます。さらに大人の方はルールに沿って一時退場および再入場することもできます。<br>
+                            ※フードコート等での座席の確保はご遠慮ください。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">団体で集合写真はとれますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            ご同伴のカメラマンが集合写真を撮ることも可能です。ご希望の際は事前にお知らせ下さい。ほかの団体の方が多くご来場される日は撮影・入場までにお時間がかかる場合もございます。また、キッザニアの専属カメラマンが体験写真や集合写真を無料で撮影し、後日ご自宅からWebサイトで閲覧・購入することができるサービスもございます。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">カメラやビデオで撮影はできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            ガラス越しに撮影することができます。<br>パビリオンの中に入っての撮影や体験中のお子さまへのお声かけはご遠慮ください。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">以前作ったキャッシュカードや運転免許証は持ち込んでもよいですか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            お持ち込みは可能です。お忘れの場合、再発行はいたしかねますのでご注意ください。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">プロフェッショナル会員のこどもがいる場合、プロフェッショナルの特典を受けることはできますか？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            団体来場の場合は利用できません。JOBスケジュールカードを次回ご来場時にご提示いただければ、体験履歴の登録とともに増額分のキッゾをお渡しいたします。来場当日の体験記録登録については、後日KidZania Professional問い合わせ窓口までご連絡ください。
+                        </h4>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">バースデーカードとは？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            ご来場日が誕生月のお子さまには「バースデーカード」をプレゼントしています。<br>
+                            インフォメーションデスクや各パビリオンにて、「お子さまの名前」、「生年月日」、「年齢」を口頭で確認した後、バースデーカードを発行いたします。<br>
+                            キッゾを払うパビリオンの受付時にカードを見せると、キッゾが無料で体験ができます。また、スタッフ（スーパーバイザー）から「お祝いのメッセージ」がもらえます。<br>
+                            ※誕生日月のみ有効（デパートでの買い物・特別イベントでは使用できません）。
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq06" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">アクセス・駐車場</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">アクセスやバスの駐車場などについて教えてください。</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            バス駐車場のご利用は事前予約にて承ります。
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア東京】</b>
+                            　<a href="https://www.kidzania.jp/tokyo/access/" target="_blank">アクセス・駐車場についてはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア甲子園】</b>
+                            　<a href="https://www.kidzania.jp/koshien/access/" target="_blank">アクセス・駐車場についてはこちら</a>
+                        </h4>
+                        <h4 class="faq-all__wrap">
+                            <b>【キッザニア福岡】</b>
+                            　<a href="https://www.kidzania.jp/fukuoka/access/" target="_blank">アクセス・駐車場についてはこちら</a>
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="faq07" class="faq-all__block">
+            <div class="containers">
+                <h2 class="ttl-secondary non">団体向け学習プログラム</h2>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">「キャリア教育実践プログラム」とは？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            キッザニアでの働く体験を通じて、自分の将来を深く考えるきっかけ作りをするプログラムです。<br>「キャリア教育」を目的とした事前・事後学習にご活用いただけるワークシートをご用意しております。<br>
+                            詳しくは学校向け資料をご覧ください。
+                        </h4>
+                        <a href="./catalog/catalog-school.html"  class="more">学校団体向け資料ダウンロード</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">「KidZania SDGs プログラム with School」とは？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            キッザニアでの働く体験を通じて、「自分のキャリア」と「社会課題」を連動して考えるきっかけとなるプログラムです。<br>
+                            「SDGｓ学習」を目的とした事前・事後学習にご活用いただけるワークシートをご用意しております。<br>
+                            詳しくは学校向け資料をご覧ください。
+                        </h4>
+                        <a href="./catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="question"><h3 class="question__ttl">「My English Program」とは？</h3></dt>
+                    <dd class="answer">
+                        <h4 class="faq-all__txt">
+                            学校で習った英語をキッザニアの中で実践的に使うことができるプログラムです。<br>
+                            キッザニアご来場時に取り組むことができる、ワークシートをご用意しております。<br>
+                            ご希望の学校団体の方はワークシートをご持参ください。<br>
+                            ※実施内容は施設によって異なりますので、詳しくはご希望の施設にお問い合わせください。
+                        </h4>
+                        <a href="./catalog/catalog-school.html" class="more">学校団体向け資料ダウンロード</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="./contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="./visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="./visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="./visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="./reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

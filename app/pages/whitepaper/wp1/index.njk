@@ -1,0 +1,130 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "キッザニア｜キャリア教育を実践する小学校の先生方へ学年別キャリア教育活動事例集" %}
+{% set description = "キッザニアの学校団体の方向け資料です。フォームにて選択いただいた拠点に合った資料を送付いたします。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main class="catalog">
+  <section>
+    <div class="containers flex">
+
+      <!-- 資料紹介 -->
+      <article class="sub-conts article">
+
+        <h1 class="article__ttl">キャリア教育を実践する小学校の先生方へ<br>学年別キャリア教育活動事例集</h1>
+
+        <!-- 資料のスライダー -->
+        <div class="wp-slick">
+          <div id="wp-slick">
+            <figure><img src="../../assets/img/catalog/career-counseling.png" alt="学年別キャリア教育活動事例集"></figure>
+          </div>
+        </div>
+
+
+        <h2 class="article__desc">
+          資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。<br>資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。資料説明文が入ります。
+        </h2>
+
+        <div class="article__toc">
+          <h2 class="article__toc--ttl">本資料の目次</h2>
+          <div class="article__toc--list">
+            <dl>
+              <dt>
+                <h3>キャリア教育とは</h3>
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    <h4>キャリア教育の実施状況</h4>
+                  </li>
+                  <li>
+                    <h4>保護者が学校教育に期待することとは</h4>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <h3>学年別キャリア教育活動事例集</h3>
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    <h4>キャリア教育で育むべき「基礎的・汎用的能力」とは</h4>
+                  </li>
+                  <li>
+                    <h4>活動事例集①：人間関係形成・社会形成能力</h4>
+                  </li>
+                  <li>
+                    <h4>活動事例集②：自己理解・自己管理能力</h4>
+                  </li>
+                  <li>
+                    <h4>活動事例集③：課題対応能力</h4>
+                  </li>
+                  <li>
+                    <h4>活動事例集④：キャリアプランニング能力</h4>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <h3>キャリア教育に効果的な職業体験とは</h3>
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    <h4>キャリア教育が日常生活にもたらす変化とは</h4>
+                  </li>
+                  <li>
+                    <h4>キャリア教育で職業体験を実施することのメリットとは</h4>
+                  </li>
+                  <li>
+                    <h4>職業体験をするならキッザニアへ</h4>
+                  </li>
+                  <li>
+                    <h4>会社概要</h4>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- サイドメニュー -->
+      <aside class="side-form">
+
+        <!-- カイロスタグ挿入 -->
+        <div class="form__ttl">ダウンロード申し込みフォーム</div>
+        <!-- cms embed tag -->
+        <div id="bdash_embed_form_container_prd_1629_1">
+          <script type="text/javascript" src="https://cms.smart-bdash.com/1629/embed_tags/1/generate_iframe.js"
+            charset="UTF-8"></script>
+        </div>
+        <!-- end cms embed tag -->
+        <!-- カイロスタグ挿入 end -->
+      </aside>
+
+    </div>
+  </section>
+</main>
+{% endblock %}

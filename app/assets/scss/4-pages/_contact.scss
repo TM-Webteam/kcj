@@ -1,0 +1,84 @@
+/*
+  ----------------
+  contact
+  ----------------
+*/
+
+.contact {
+    background-color: #F9F8EE;
+
+    @media #{$sp} {
+        width: 100%;
+    }
+
+    .containers {
+        width: (1100 / 1440) *100vw;
+        max-width: 1100px;
+        padding: 78px 0 70px;
+
+        @media #{$sp} {
+            width: 86%;
+            padding: 35px 0;
+        }
+    }
+
+    .hero {
+        background: url("../img/contact/bg-hero.png") no-repeat 50% / cover;
+
+        @media #{$sp} {
+            background: url("../img/contact/bg-hero.png") no-repeat center left 50% / cover;
+            text-align: center;
+        }
+
+        .containers {
+            padding: 105px 0 91px;
+
+            @media #{$sp} {
+                width: (690 / 750)*100vw;
+                display: block;
+                padding: (308 / 750)*100vw 0 (60 / 750)*100vw;
+            }
+        }
+
+        .item {
+            width: 792px;
+            margin: 0 auto;
+
+            @media #{$sp} {
+                width: 100%;
+            }
+        }
+
+        .ttl-primary {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #fff;
+
+            @media #{$sp} {
+                font-size: (48/ 750)*100vw;
+                line-height: (70/ 48);
+                margin-bottom: (55/ 750)*100vw;
+            }
+        }
+
+
+        &__lead {
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .form {
+        iframe {
+            border: none;
+            min-height: 1280px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            @media #{$sp} {
+                min-height: 1890px;
+            }
+        }
+    }
+}

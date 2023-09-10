@@ -149,25 +149,31 @@
   }
 
   .reason02 {
-    background: #FFFFFA;
+    background: none;
+
+    .containers {
+      max-width: 100%;
+      width: 1160px;
+      background: none;
+      padding: 0;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
 
     .ttl-secondary {
       margin-bottom: 50px;
       @media #{$sp} {
-        margin-bottom: 20px;
+        margin-bottom: (80 / 750)*100vw;
         line-height: 1.6;
       }
     }
 
     .item {
-      margin-bottom: 60px;
+      margin-bottom: 20px;
 
       &.flex {
-        flex-flow: row nowrap;
-
-        @media #{$sp} {
-          flex-flow: row wrap;
-        }
+        flex-flow: row wrap;
       }
 
       &__box {
@@ -233,6 +239,17 @@
             }
           }
         }
+
+        &--cation{
+          font-size: 14px;
+          text-align: right;
+          font-weight: 600;
+
+          @media #{$pc} {
+            position: relative;
+            top: -16px;
+          }
+        }
       }
     }
 
@@ -241,44 +258,6 @@
     }
   }
 
-  .about {
-    background: #F7F6E8 url("../img/top/bg-about.png") no-repeat top right / auto 100%;
-    @media #{$sp} {
-      background: #F7F6E8 url("../img/top/bg-about-sp.png") no-repeat top right / cover;
-    }
-    .containers {
-      @media #{$sp} {
-        padding: (70 / 750)* 100vw (30 / 750)* 100vw;
-      }
-    }
-
-    .ttl-secondary {
-      text-align: left;
-      margin-bottom: 30px;
-
-      @media #{$sp} {
-        margin-bottom: 20px;
-        line-height: 1.6;
-      }
-    }
-
-    &__txt {
-      font-size: 20px;
-      line-height: (35 / 20);
-      margin-bottom: 40px;
-
-      @media #{$sp} {
-        font-size: (32/ 750)* 100vw;
-        line-height: 1.6;
-        margin-bottom: 40px;
-      }
-    }
-
-    .more {
-      width: 400px;
-      margin: 0 auto 0 0;
-    }
-  }
 
   .needs {
     .containers {
@@ -293,6 +272,8 @@
 
     .card {
       &__wrap {
+        display: flex;
+        flex-flow: column nowrap;
         @media #{$sp} {
           width: (586/ 750)*100vw;
         }
@@ -305,6 +286,9 @@
           text-align: center;
           font-weight: bold;
           position: relative;
+          flex: 1 0 auto;
+          display: flex;
+          align-items: center;
 
           @media #{$sp} {
             font-size: (32/ 750)*100vw;
@@ -330,6 +314,7 @@
 
       &__box {
         padding: 18px 0;
+        background: none;
 
         &--img {
           width: 174px;
@@ -338,17 +323,33 @@
       }
 
       .more {
+        width: 100%;
         @media #{$sp} {
-          width: 100%;
           max-width: 100%;
         }
       }
     }
 
     .containers {
-      > .more {
-        width: 400px;
-        padding: 10px 17px;
+      .ctabtn {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+
+        .more {
+          width: 400px;
+          padding: 10px 17px;
+          margin: 0;
+  
+          +* {
+            @media #{$sp} {
+              margin-top: 15px;
+            }
+            @media #{$pc} {
+              margin-left: 15px;
+            }
+          }
+        }
       }
     }
   }
@@ -357,6 +358,12 @@
     position: relative;
     background-color: #F7F6E8;
     z-index: 0;
+
+
+    .lead {
+      margin-bottom: 10px;
+    }
+    
 
     .ttl-secondary {
       position: relative;
@@ -412,6 +419,11 @@
         text-align: center;
       }
 
+      .lead {
+        font-size: 15px;
+        margin-bottom: 6px;
+      }
+
       .more {
         font-size: 14px;
         line-height: 1;
@@ -424,6 +436,12 @@
           border-top: solid 2px #fff;
           border-right: solid 2px #fff;
         }
+        &:hover {
+          &::before {
+            border-top: solid 2px #AD033B;
+            border-right: solid 2px #AD033B;
+          }
+        }
       }
     }
   }
@@ -431,6 +449,7 @@
   .faq {
     .containers {
       width: 1100px;
+      max-width: 100%;
 
       @media #{$sp} {
         width: 90%;
@@ -505,7 +524,7 @@
           .question__ttl::after {
             transform: translateY(-50%) rotate(0);
           }
-        } 
+        }
       }
       .answer {
         
@@ -517,6 +536,11 @@
         padding: 0 100px 0 77px;
         color: #333;
         position: relative;
+
+        hr {
+          border: 1px dashed #ddd;
+          margin: 30px 0;
+        }
 
         &::before {
           content: 'A';
@@ -617,6 +641,7 @@
     
     .containers {
       width: 997px;
+      max-width: 100%;
       padding: 0;
 
       @media #{$sp} {

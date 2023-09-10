@@ -1,0 +1,190 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "一般団体の方へ" %}
+{% set description = "こども会、学童、英会話教室など、20名以上の一般団体の方がキッザニアをご活用される際のポイントや、ご利用いただけるサービスをご紹介します。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="general">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <div class="speech-bubble"><span class="speech-bubble__txt">こども会、学童、英会話教室など20名以上の</span></div>
+                <h1 class="ttl-primary cB">一般団体の方へ</h1>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="../reserve.html" class="more">
+                            団体予約はこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <a href="../index.html">団体TOP</a>
+        <span>></span>
+        <span>一般団体の方へ</span>
+    </section>
+
+    <section class="place">
+        <div class="containers">
+            <h2 class="ttl-secondary">各拠点のご紹介</h2>
+            <div class="item flex">
+                <dl class="item__box">
+                    <dt class="bg-orange"><h3 class="item__box--ttl">キッザニア東京・キッザニア甲子園</h3></dt>
+                    <dd class="bg-gray">
+                        <h4 class="item__box--txt">
+                            <em>第1部 　 9:00～15:00<span class="pc-only">／</span><br class="sp-only">第2部 　 16:00～21:00</em>
+                            <span>※第1部・第2部は完全入れ替え制です。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl class="item__box">
+                    <dt class="bg-light-orange"><h3 class="item__box--ttl">キッザニア福岡</h3></dt>
+                    <dd class="bg-light-gray">
+                        <h4 class="item__box--txt">
+                            <div class="item__box--inner">
+                                <div class="item__box--wrap"><small>（平日）</small><em>9:00～17:00</em></div>
+                                <div class="item__box--wrap"><small>（休日・H.S）</small><em>第1部　9:00～14:30<br>第2部　15:30～20:00</em></div>
+                            </div>
+                            <span>※日によって営業時間が異なる場合があります。<br>※営業時間の30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+            </div>
+            <a href="../catalog/catalog-general.html" class="more">一般団体向け資料ダウンロード</a>
+        </div>
+    </section>
+
+    <section class="needs card-type2">
+        <div class="containers">
+            <h2 class="ttl-secondary">こんな一般団体の方におすすめです</h2>
+            <ul class="flex card">
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">あらゆる年齢のこどもが<br>楽しめる場に行きたい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs01.png" alt="あらゆる年齢のこどもが楽しめる場に行きたい"></figure>
+                    </summary>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">イベントがいつも<br>代わり映えしない</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs02.png" alt="イベントがいつも代わり映えしない"></figure>
+                    </summary>
+                </li>
+                <li class="card__wrap">
+                    <h3 class="card__wrap--ttl">天候に左右されたくない<br>安心して引率したい</h3>
+                    <summary class="card__box">
+                        <figure class="card__box--img"><img src="../assets/img/top/img-needs03.png" alt="天候に左右されたくない安心して引率したい"></figure>
+                    </summary>
+                </li>
+            </ul>
+            <h3 class="attention">キッザニアは、こども会や学童保育、<br class="pc-only">英会話スクールやスイミングスクールなど、様々な団体の方にご利用いただいております。<br>遠足やお別れ会などの行事にご活用ください。</h3>
+        </div>
+    </section>
+
+    <section class="point element">
+        <div class="containers">
+          <h2 class="ttl-secondary rack">団体利用のおすすめポイント</h2>
+          <ul class="flex gap30 item">
+            <li class="item__box">
+              <div class="item__box--num core">1</div>
+              <h3 class="item__box--ttl">天候に左右されない屋内施設</h3>
+              <figure class="item__box--img"><img src="../assets/img/group/general/img-general01.png" alt="天候に左右されない屋内施設"></figure>
+            </li>
+            <li class="item__box">
+              <div class="item__box--num core">2</div>
+              <h3 class="item__box--ttl">こども達が自分で考え<br>自由に活動できる</h3>
+              <figure class="item__box--img"><img src="../assets/img/group/general/img-general02.png" alt="こども達が自分で考え自由に活動できる"></figure>
+            </li>
+            <li class="item__box">
+              <div class="item__box--num core">3</div>
+              <h3 class="item__box--ttl">大人は保護者ラウンジで<br>ゆったり過ごせる</h3>
+              <figure class="item__box--img"><img src="../assets/img/group/general/img-general03.png" alt="大人は保護者ラウンジでゆったり過ごせる"></figure>
+            </li>
+          </ul>
+          <a href="../reserve.html" class="more">団体予約はこちら</a>
+        </div>
+      </section>
+
+    <section class="general-program">
+        <div class="containers">
+            <h2 class="ttl-secondary">団体の方向けサービス</h2>
+            <div class="flex">
+                <div class="item">
+                    <h3 class="ttl-tertiary">フードチケット</h3>
+                    <div class="item__box">
+                        <figure class="item__box--img"><img src="../assets/img/group/general/img-general04.png" alt="フードチケット"></figure>
+                        <h4 class="item__box--txt">フードチケットとは、事前にお申し込みいただくことで、当日は現金不要で指定のセットメニューと交換ができるチケットです。</h4>
+                        <div class="item__box--caution">※衛生管理上、食事のお持ち込みはご遠慮いただいております。ただし、水筒・離乳食・アレルギー除去食についてのお持ち込みは可能です。</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="ttl-tertiary">団体フォトサービス</h3>
+                    <div class="item__box item__box">
+                        <figure class="item__box--img"><img src="../assets/img/group/general/img-general05.png" alt="団体フォトサービス"></figure>
+                        <h4 class="item__box--txt">パビリオンでの体験写真・団体集合写真をご家庭からインターネットで閲覧・購入が可能です。</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="../contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="../visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="../visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="../visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="../reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="../assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

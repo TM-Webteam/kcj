@@ -1,0 +1,103 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "キッザニア甲子園 施設見学" %}
+{% set description = "キッザニア甲子園の見学はこちらからお申し込みください。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "../" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="visit">
+    <section class="hero hero--koshien">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">キッザニア甲子園 施設見学</h1>
+                <h2 class="hero__lead">キッザニア甲子園の見学はこちらからお申し込みください。</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="containers">
+            <div class="form__note">
+                <p>● 以下フォームにご連絡先、お問合せ内容をご記入の上、送信してください。担当よりご連絡申し上げます。<br>● 回答までにお時間をいただく場合や、回答ができない場合もございますので、ご了承ください。
+                </p>
+            </div>
+
+            <div class="outline">
+                <div class="flex gap40 fS">
+                    <div class="group core gap20 ta-l">
+                        <div class="group__inner">
+                            <div class="group__ttl"><span>実施概要</span></div>
+                            <div class="flex">
+                                <dl class="flex group__desc-list">
+                                    <dt>実施日</dt>
+                                    <dd>月曜日・水曜日・金曜日（祝祭日を除く）</dd>
+                                </dl>
+                                <dl class="flex group__desc-list">
+                                    <dt>時間</dt>
+                                    <dd>①10：30～　②13：30～　③16：30～</dd>
+                                </dl>
+                                <dl class="flex group__desc-list">
+                                    <dt>所要時間</dt>
+                                    <dd>約90分程度</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="group__inner">
+                            <div class="group__ttl"><span>内容</span></div>
+                            <div class="group__txt">
+                                ①施設のご案内<br>
+                                ②当日の過ごし方<br>
+                                ③事前・事後学習のご案内など<br>
+                                ④質疑応答
+                                <p class="group__txt--caution">※パビリオン内の立ち入りはできません。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group__ttl"><span>注意事項</span></div>
+                        <div class="flex gap20 fS">
+                            <ul class="group__list">
+                                <li>事前予約が必要です。<br>希望日の1週間前までにお申し込みください。</li>
+                                <li>施設の都合上見学をお受けできない場合が<br>ございます。</li>
+                                <li>他の団体の方と合同でご案内させていただく場合もございます。</li>
+                                <li>お子さま同伴はご遠慮ください。</li>
+                                <li>各日程とも先着順で定員になり次第、締め切らせていただきます。</li>
+                            </ul>
+                            <ul class="group__list">
+                                <li>キッザニア内の写真の撮影等は可能ですが、インターネット等への掲載はご遠慮ください。</li>
+                                <li>研修利用の場合は、別途お問い合わせください。<br>（有料となる場合がございます）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cms embed tag -->
+            <div id="bdash_embed_form_container_prd_1629_7">
+                <script type="text/javascript" src="https://cms.smart-bdash.com/1629/embed_tags/7/generate_iframe.js"
+                    charset="UTF-8"></script>
+            </div>
+            <!-- end cms embed tag -->
+
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -167,6 +167,47 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  &.ta-l {
+    text-align: left;
+  }
+
+  &.gap10 {
+    gap: 10px;
+    @media #{$sp} {
+      gap: 5px;
+    }
+  }
+  &.gap20 {
+    gap: 20px;
+    @media #{$sp} {
+      gap: 10px;
+    }
+  }
+  &.gap30 {
+    gap: 30px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap40 {
+    gap: 40px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap50 {
+    gap: 50px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap60 {
+    gap: 60px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
 }
 
 /***********/
@@ -235,7 +276,7 @@ a,button[type="submit"] {
 /*** その他 ***/
 
 main {
-  padding-top: 140px;
+  padding-top: 137px;
   @media #{$sp} {
     padding-top: 60px;
   }

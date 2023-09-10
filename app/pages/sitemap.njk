@@ -1,0 +1,80 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "サイトマップ" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "./" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="sitemap">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">サイトマップ</h1>            
+            </div>
+        </div>
+    </section>
+
+    <div class="containers nav">
+        <div class="flex">
+          <div class="nav__box">
+            <div class="nav__box--ttl"><span>お役立ち情報</span></div>
+            <ul class="nav__box--list">
+              <li><a href="./case.html">実績・事例</a></li>
+              <li><a href="./whitepaper/wp1/">お役立ち資料</a></li>
+              <li><a href="./column/index.html">お役立ちコラム</a></li>
+            </ul>
+          </div>
+          <div class="nav__box">
+            <div class="nav__box--ttl"><span>サービスガイド</span></div>
+            <ul class="nav__box--list">
+              <li><a href="./about.html">キッザニアとは</a></li>
+              <li>
+                  <a href="./group/school.html">学校団体の方へ</a>
+                  <span><a href="./">学校団体の方向けキッザニア概要資料</a></span>
+              </li>
+              <li>
+                  <a href="./group/general.html">一般団体の方へ</a>
+                  <span class="item__box--sub"><a href="./">一般団体の方向けキッザニア概要資料</a></span>
+              </li>
+              <li><a href="./group/agency.html">旅行代理店の担当者の方へ</a></li>
+            </ul>
+          </div>
+          <div class="nav__box">
+            <div class="nav__box--ttl"><span>ご予約について</span></div>
+            <ul class="nav__box--list">
+              <li><a href="./visit/visit-tokyo.html">キッザニア東京 施設見学申し込み</a></li>
+              <li><a href="./visit/visit-koshien.html">キッザニア甲子園 施設見学申し込み</a></li>
+              <li><a href="./visit/visit-fukuoka.html">キッザニア福岡 施設見学申し込み</a></li>
+              <li><a href="./reserve.html">団体予約</a></li>
+            </ul>
+          </div>
+          <div class="nav__box">
+            <div class="nav__box--ttl"><span>お問い合わせ</span></div>
+            <ul class="nav__box--list">
+              <li><a href="./faq.html">よくあるご質問</a></li>
+              <li><a href="./contact.html">お問い合わせ</a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
+</main>
+{% endblock %}

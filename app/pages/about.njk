@@ -1,0 +1,1099 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "キッザニアとは" %}
+{% set description = "キッザニアは、こども達が好きな仕事にチャレンジし、楽しみながら社会の仕組みを学ぶことができる職業・社会体験施設です。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "./" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="about">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">キッザニアとは</h1>
+                <div class="hero__btn">
+                    <div class="ctabtn flex jcC">
+                        <a href="./catalog/catalog-school.html" class="more">
+                            学校団体向け資料ダウンロード
+                        </a>
+                        <a href="./catalog/catalog-general.html" class="more border-red">
+                            一般団体向け資料ダウンロード
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <a href="./">団体TOP</a>
+        <span>></span>
+        <span>キッザニアとは</span>
+    </section>
+
+    <section class="anc">
+        <div class="containers">
+            <ul class="flex jcC gap30 inherit anc__box">
+                <li><a href="#desc">概要</a></li>
+                <li><a href="#tokyo">キッザニア東京 <span><br class="sp-only">について</span></a></li>
+                <li><a href="#koshien">キッザニア甲子園 <span><br class="sp-only">について</span></a></li>
+                <li><a href="#fukuoka">キッザニア福岡 <span><br class="sp-only">について</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="desc" class="sec01 desc">
+        <div class="containers">
+            <h2 class="ttl-secondary">楽しみながら学べる<br class="sp-only">“こどもが主役の街”</h2>
+            <div class="flex aiC sp-reverse">
+                <dl class="sec01__box">
+                    <dt>
+                        <h3>キッザニアは職業・社会体験を通じて、<br class="pc-only">こども達の“生きる力”を育み、将来を考えるきっかけを提供します。</h3>
+                    </dt>
+                    <dd>
+                        <h4>キッザニアは、こども達が好きな仕事にチャレンジし、楽しみながら社会の仕組みを学ぶことができる職業・社会体験施設です。<br>
+                            <br>それぞれの仕事の役割や楽しさを感じ、今まで意識していなかった仕事や社会のつながりにも目を向ける機会を通して、こども達一人ひとりが、自分の将来を考えるきっかけとなることを目指しています。
+                        </h4>
+                    </dd>
+                </dl>
+                <figure class="sec01__img"><img src="./assets/img/about/img-about01.png" alt="楽しみながら学べる“こどもが主役の街”"></figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="play symmetry">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニアで体験できること</h2>
+            <div class="flex aiC item">
+                <figure class="item__img"><img src="./assets/img/about/img-about02.png" alt="キッザニアで体験できること"></figure>
+                <summary class="item__box">
+                    <h3 class="item__box--ttl">約100種類の仕事やサービスを<br class="sp-only">体験できる</h3>
+                    <h4 class="item__box--txt">多くの選択肢の中から自分で仕事を選んでチャレンジ。<br>社会には様々な仕事があり、知らなかった仕事や役割に気づくことができます。</h4>
+                    <div class="item__box--caution">※キッザニア東京・甲子園の数になります。キッザニア福岡は内容が異なります。</div>
+                    
+                </summary>
+            </div>
+
+            <div class="flex aiC sp-reverse item">
+                <summary class="item__box">
+                    <h3 class="item__box--ttl">こどもサイズの街でのリアルな体験</h3>
+                    <h4 class="item__box--txt">スポンサー企業・団体の協力により、こども達にリアルな環境を提供。企業の想いやこだわりを知り、本格的なユニフォームや道具を使った仕事体験などができます。</h4>
+                </summary>
+                <figure class="item__img"><img src="./assets/img/about/img-about03.png" alt="こどもサイズの街でのリアルな体験"></figure>
+            </div>
+
+            <div class="flex aiC item">
+                <figure class="item__img"><img src="./assets/img/about/img-about04.png" alt="独自の経済"></figure>
+                <summary class="item__box">
+                    <h3 class="item__box--ttl">独自の経済</h3>
+                    <h4 class="item__box--txt">実体験に基づく金融教育の場を提供。<br>「働いて給料をもらう」「銀行に預金する」「働いて得たお金で買い物や体験をする」ことを通して、経済の流れについて学びます。</h4>
+                </summary>
+            </div>
+        </div>
+    </section>
+
+    <section class="basic-information">
+        <div class="containers">
+            <h2 class="ttl-secondary">キッザニアの基本情報</h2>
+
+            <div id="tokyo" class="basic-information__block tokyo">
+                <h3 class="ttl-tertiary">キッザニア東京</h3>
+                <dl class="basic-information__guidance flex">
+                    <dt><h4>営業時間</h4></dt>
+                    <dd>
+                        <h4>
+                            <em>第1部　9：00～15：00<br>第2部　16：00～21：00</em>
+                            <span>※第1部・第2部は完全入れ替え制です。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">学校団体入場料金（税込価格）</h4></dt>
+                    <dd class="js-pull-down-contents">
+                        <div class="basic-information__price--body weekday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap weekday"><span>平日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">3,000円</div>
+                                    <div class="table-body__wrap">2,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">3,200円</div>
+                                    <div class="table-body__wrap">3,000円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,900円</div>
+                                    <div class="table-body__wrap">1,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">1,500円</div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">1,600円</div>
+                                    <div class="table-body__wrap">1,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">950円</div>
+                                    <div class="table-body__wrap">900円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution">
+                                ※休日、H.S（ホリデーシーズン）は学校料金適用外となり、一般料金となります。<br>
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇です。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※引率教員は生徒15名に付き1名無料。<br>
+                                ※添乗員・乗務員は無料。引率者にはカメラマンも含む。<br>
+                                ※添乗員・乗務員とは旅行会社に所属する旅程管理者であり、団体を引率し、外務員証または旅程管理者証もしくは所属する会社の名刺等の提示が必要です。
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">一般団体入場料金（税込価格）</h4></dt>
+                    <dd class="js-pull-down-contents">
+                        <div class="basic-information__price--body weekday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap weekday"><span>平日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">4,000円</div>
+                                    <div class="table-body__wrap">3,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">4,500円</div>
+                                    <div class="table-body__wrap">3,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                    <div class="table-body__wrap">2,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,000円</div>
+                                    <div class="table-body__wrap">1,650円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">2,250円</div>
+                                    <div class="table-body__wrap">1,900円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                    <div class="table-body__wrap">1,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">650円</div>
+                                    <div class="table-body__wrap">600円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body holiday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap holiday"><span>休日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">5,000円</div>
+                                    <div class="table-body__wrap">4,000円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">5,500円</div>
+                                    <div class="table-body__wrap">4,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,500円</div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,500円</div>
+                                    <div class="table-body__wrap">2,000円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">2,750円</div>
+                                    <div class="table-body__wrap">2,250円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,250円</div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">700円</div>
+                                    <div class="table-body__wrap">650円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body hs">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap hs"><span>H.S*</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">6,400円</div>
+                                    <div class="table-body__wrap">4,700円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">6,900円</div>
+                                    <div class="table-body__wrap">5,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,900円</div>
+                                    <div class="table-body__wrap">2,600円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,800円</div>
+                                    <div class="table-body__wrap">1,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">3,200円</div>
+                                    <div class="table-body__wrap">2,350円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">3,450円</div>
+                                    <div class="table-body__wrap">2,600円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,450円</div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">900円</div>
+                                    <div class="table-body__wrap">750円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution-pink">※H.S：ホリデーシーズン</div>
+                            <div class="basic-information__price--caution">
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇期間です。<br>
+                                　期間設定は年度毎に異なります。詳しくはお問い合わせください。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※大人はこども（3～15歳）15名につき1名無料。
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="ctabtn flex jcC">
+                            <a href="./catalog/catalog-school.html" class="more">
+                                学校団体向け資料ダウンロード
+                            </a>
+                            <a href="./catalog/catalog-general.html" class="more border-red">
+                                一般団体向け資料ダウンロード
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="koshien" class="basic-information__block koshien">
+                <h3 class="ttl-tertiary">キッザニア甲子園</h3>
+                <dl class="basic-information__guidance flex">
+                    <dt><h4>営業時間</h4></dt>
+                    <dd>
+                        <h4>
+                            <em>第1部　9：00～15：00<br>第2部　16：00～21：00</em>
+                            <span>※第1部・第2部は完全入れ替え制です。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+                
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">学校団体入場料金（税込価格）</h4></dt>
+                    <dd class="js-pull-down-contents">
+                        <div class="basic-information__price--body weekday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap weekday"><span>平日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,900円</div>
+                                    <div class="table-body__wrap">2,700円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">3,100円</div>
+                                    <div class="table-body__wrap">2,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,800円</div>
+                                    <div class="table-body__wrap">1,700円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">1,450円</div>
+                                    <div class="table-body__wrap">1,350円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">1,550円</div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">900円</div>
+                                    <div class="table-body__wrap">850円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution">
+                                ※休日、H.S（ホリデーシーズン）は学校料金適用外となり、一般料金となります。<br>
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇です。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※引率教員は生徒15名に付き1名無料。 <br>
+                                ※添乗員・乗務員は無料。カメラマンは有料です。<br>
+                                ※添乗員・乗務員とは旅行会社に所属する旅程管理者であり、団体を引率し、外務員証または旅程管理者証もしくは所属する会社の名刺等の提示が必要です。
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">一般団体入場料金（税込価格）</h4></dt>
+
+                    <dd class="js-pull-down-contents">
+                        <div class="basic-information__price--body weekday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap weekday"><span>平日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">3,800円</div>
+                                    <div class="table-body__wrap">3,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">4,300円</div>
+                                    <div class="table-body__wrap">3,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,300円</div>
+                                    <div class="table-body__wrap">2,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                    <div class="table-body__wrap">1,100円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">1,900円</div>
+                                    <div class="table-body__wrap">1,600円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">2,150円</div>
+                                    <div class="table-body__wrap">1,750円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,150円</div>
+                                    <div class="table-body__wrap">1,100円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">600円</div>
+                                    <div class="table-body__wrap">550円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body holiday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap holiday"><span>休日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">4,800円</div>
+                                    <div class="table-body__wrap">3,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">5,300円</div>
+                                    <div class="table-body__wrap">4,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                    <div class="table-body__wrap">2,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                    <div class="table-body__wrap">1,900円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">2,650円</div>
+                                    <div class="table-body__wrap">2,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                    <div class="table-body__wrap">1,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">650円</div>
+                                    <div class="table-body__wrap">600円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body hs">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap hs"><span>H.S*</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（6時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">6,100円</div>
+                                    <div class="table-body__wrap">4,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">6,600円</div>
+                                    <div class="table-body__wrap">4,900円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,800円</div>
+                                    <div class="table-body__wrap">2,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,700円</div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">3,050円</div>
+                                    <div class="table-body__wrap">2,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">3,300円</div>
+                                    <div class="table-body__wrap">2,450円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                    <div class="table-body__wrap">1,250円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">850円</div>
+                                    <div class="table-body__wrap">700円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution-pink">※H.S：ホリデーシーズン</div>
+                            <div class="basic-information__price--caution">
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇期間です。<br>
+                                　期間設定は年度毎に異なります。詳しくはお問い合わせください。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※大人はこども（3～15歳）15名につき1名無料。
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="ctabtn flex jcC">
+                            <a href="./catalog/catalog-school.html" class="more">
+                                学校団体向け資料ダウンロード
+                            </a>
+                            <a href="./catalog/catalog-general.html" class="more border-red">
+                                一般団体向け資料ダウンロード
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="fukuoka" class="basic-information__block fukuoka">
+                <h3 class="ttl-tertiary">キッザニア福岡</h3>
+                <dl class="basic-information__guidance flex">
+                    <dt><h4>営業時間</h4></dt>
+                    <dd>
+                        <h4>
+                            <em>（平日）　　　&ensp;9：00～17：00<br>
+                                （休日・HS）　第1部　9：00～14：30<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;第2部　15：30～20：00</em>
+                            <span>※日によって営業時間が異なる場合があります。<br>※営業時間30分前に開場予定です。</span>
+                        </h4>
+                    </dd>
+                </dl>
+
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">学校団体入場料金（税込価格）</h4></dt>
+                    <dd class="js-pull-down-contents">
+                        <div class="basic-information__price--body weekday">
+                            <div class="flex table-header table-header--one">
+                                <div class="table-header__wrap weekday"><span>平日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（最大6時間滞在可能）</span></div>
+                            </div>
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap flex1">3,000円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap flex1">3,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap flex1">1,900円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap flex1">1,500円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap flex1">1,600円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap flex1">950円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution">
+                                ※休日、H.S（ホリデーシーズン）は学校料金適用外となり、一般料金となります。<br>
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇です。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※引率教員は生徒15名に付き1名無料。 <br>
+                                ※添乗員・乗務員は無料。引率者にはカメラマンも含む。<br>
+                                ※添乗員・乗務員とは旅行会社に所属する旅程管理者であり、団体を引率し、外務員証または旅程管理者証もしくは所属する会社の名刺等の提示が必要です。
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+                <dl class="basic-information__price">
+                    <dt class="basic-information__price--heading js-pull-down-btn"><h4 class="basic-information__price--heading__ttl">一般団体入場料金（税込価格）</h4></dt>
+                    <dd class="js-pull-down-contents">
+                        <div class="scroll">
+                            <div class="basic-information__price--body weekday scroll-contents">
+                                <div class="flex table-header table-header--flex6">
+                                    <div class="table-header__wrap table-header__wrap--flex6 weekday"><span>平日</span></div>
+                                    <div class="table-header__wrap table-header__wrap--flex6"><span>8時間チケット<br>（9：00-17：00）</span></div>
+                                    <div class="table-header__wrap table-header__wrap--flex6"><span>6時間チケット<br>（9：00-15：00）</span></div>
+                                    <div class="table-header__wrap table-header__wrap--flex6"><span>6時間チケット<br>（11：00-17：00）</span></div>
+                                    <div class="table-header__wrap table-header__wrap--flex6"><span>4時間チケット<br>（13：00-17：00）</span></div>
+                                    <div class="table-header__wrap table-header__wrap--flex6"><span>延長（30分ごと）<br><small>※8時間チケットは対象外</small></span></div>
+                                </div>
+
+                                <div class="table-body">
+                                    <div class="table-body__inner flex">
+                                        <div class="flex">
+                                            <div class="flex flex6">
+                                                <div class="table-body__wrap table-body__wrap--flex6 nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">5,000円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">3,800円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">3,800円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,700円</div>
+                                            </div>
+                
+                                            <div class="flex flex6 no-border">
+                                                <div class="table-body__wrap table-body__wrap--flex6">小学生・中学生</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">5,600円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">4,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">4,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">3,000円</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="table-body__wrap table-body__wrap--flex6">600円</div>
+                                    </div>
+
+                                    <div class="table-body__inner flex">
+                                        <div class="flex">
+                                            <div class="flex flex6">
+                                                <div class="table-body__wrap table-body__wrap--flex6 nowrap">大人<span>（16歳～）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,600円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,900円</div>
+                                            </div>
+                
+                                            <div class="flex flex6">
+                                                <div class="table-body__wrap table-body__wrap--flex6 nowrap">シニア<span>（60歳～）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,200円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,200円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,100円</div>
+                                            </div>
+                
+                                            <div class="flex flex6">
+                                                <div class="table-body__wrap table-body__wrap--flex6">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,500円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,900円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,900円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,350円</div>
+                                            </div>
+                
+                                            <div class="flex flex6 no-border">
+                                                <div class="table-body__wrap table-body__wrap--flex6">障がいのある<br>小学生・中学生</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,800円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,150円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">2,150円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,500円</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-body__wrap table-body__wrap--flex6">300円</div>
+                                    </div>
+
+                                    <div class="table-body__inner flex">
+                                        <div class="flex">
+                                            <div class="flex flex6">
+                                                <div class="table-body__wrap table-body__wrap--flex6 nowrap">介助者<span>（16歳～）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,300円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,150円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">1,150円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">950円</div>
+                                            </div>
+
+                                            <div class="flex flex6 no-border">
+                                                <div class="table-body__wrap table-body__wrap--flex6 nowrap">シニア介助者<span>（60歳～）</span></div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">650円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">600円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">600円</div>
+                                                <div class="table-body__wrap table-body__wrap--flex6">550円</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-body__wrap table-body__wrap--flex6">150円</div>
+                                    </div>
+                                    
+                                    <div class="flex">
+                                        <div class="table-body__wrap table-body__wrap--flex6">フードチケット</div>
+                                        <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body holiday">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap holiday"><span>休日</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（5.5時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（4.5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">4,800円</div>
+                                    <div class="table-body__wrap">3,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">5,300円</div>
+                                    <div class="table-body__wrap">4,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                    <div class="table-body__wrap">2,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                    <div class="table-body__wrap">1,900円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">2,650円</div>
+                                    <div class="table-body__wrap">2,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                    <div class="table-body__wrap">1,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">650円</div>
+                                    <div class="table-body__wrap">600円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-information__price--body hs">
+                            <div class="flex table-header">
+                                <div class="table-header__wrap hs"><span>H.S*</span></div>
+                                <div class="table-header__wrap part1"><span>第1部（5.5時間）</span></div>
+                                <div class="table-header__wrap part2"><span>第2部（4.5時間）</span></div>
+                            </div>
+
+                            <div class="table-body">
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">園児 <span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">5,800円</div>
+                                    <div class="table-body__wrap">4,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">小学生・中学生</div>
+                                    <div class="table-body__wrap">6,300円</div>
+                                    <div class="table-body__wrap">4,800円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">大人<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">2,500円</div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">1,400円</div>
+                                    <div class="table-body__wrap">1,300円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある園児<br><span>（3歳～小学生未満）</span></div>
+                                    <div class="table-body__wrap">2,900円</div>
+                                    <div class="table-body__wrap">2,150円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap">障がいのある<br>小学生・中学生</div>
+                                    <div class="table-body__wrap">3,150円</div>
+                                    <div class="table-body__wrap">2,400円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">介助者<span>（16歳～）</span></div>
+                                    <div class="table-body__wrap">1,250円</div>
+                                    <div class="table-body__wrap">1,200円</div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="table-body__wrap nowrap">シニア介助者<span>（60歳～）</span></div>
+                                    <div class="table-body__wrap">700円</div>
+                                    <div class="table-body__wrap">650円</div>
+                                </div>
+                                
+                                <div class="flex">
+                                    <div class="table-body__wrap">フードチケット</div>
+                                    <div class="table-body__wrap flex1">レギュラー：650円  / <br class="sp-only">ラージ：950円</div>
+                                </div>
+                            </div>
+                            <div class="basic-information__price--caution-pink">※H.S：ホリデーシーズン</div>
+                            <div class="basic-information__price--caution">
+                                ※休日とは、土曜・日曜・祝日です。<br>
+                                ※H.S（ホリデーシーズン）とは、キッザニアが定めた長期休暇期間です。<br>
+                                　期間設定は年度毎に異なります。詳しくはお問い合わせください。<br>
+                                ※お食事の持ち込みはできません。（アレルギーをお持ちの方、宗教上の理由がある場合を除く）<br>
+                                ※料金は変更になる場合があります。<br>
+                                ※大人はこども（3～15歳）15名につき1名無料。
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="ctabtn flex jcC">
+                            <a href="./catalog/catalog-school.html" class="more">
+                                学校団体向け資料ダウンロード
+                            </a>
+                            <a href="./catalog/catalog-general.html" class="more border-red">
+                                一般団体向け資料ダウンロード
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-service">
+        <div class="containers">
+            <h2 class="ttl-secondary">団体フォトサービスについて</h2>
+            <h3 class="photo-service__txt">
+                パビリオンでの体験写真や団体集合写真を<br>
+                ご家庭よりインターネットで閲覧・購入が可能です。<br>
+                ご希望の場合は、予約完了後にお送りする最終確認書にてお申し込みください。
+            </h3>
+        </div>
+    </section>
+
+    <section class="food-ticket sec01">
+        <div class="containers">
+            <h2 class="ttl-secondary">フードチケットについて</h2>
+            <div class="flex aiC sp-reverse">
+                <dl class="sec01__box">
+                    <dt>
+                        <h3>フードチケットとは、事前にお申し込みいただくことで、当日は現金不要で指定のセットメニューと交換ができるチケットです。</h3>
+                    </dt>
+                    <dd>
+                        <div class="food-ticket__caution">※衛生管理上、食事のお持ち込みはご遠慮いただいております。<br>
+                            　ただし、水筒・離乳食・アレルギー除去食についてのお持ち込みは可能です。</div>
+                    </dd>
+                </dl>
+                <figure class="sec01__img"><img src="./assets/img/about/img-about05.png" alt="フードチケットについて"></figure>
+            </div>
+        </div>
+
+        <div class="ctabtn flex jcC">
+            <a href="./catalog/catalog-school.html" class="more">
+                学校団体向け資料ダウンロード
+            </a>
+            <a href="./catalog/catalog-general.html" class="more border-red">
+                一般団体向け資料ダウンロード
+            </a>
+        </div>
+    </section>
+
+    <section class="inquiry04">
+        <div class="containers-full">
+            <div class="flex">
+                <a href="./contact.html" class="item">
+                    <div class="item__box left">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-mail.png" alt="お問い合わせ">
+                        </figure>
+                        <h2 class="item__box--ttl">お問い合わせ</h2>
+                        <h3 class="item__box--txt">キッザニアへのお問い合わせは<br>こちらよりお願いします。</h3>
+                    </div>
+                </a>
+                <span class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-visit.png" alt="施設見学申し込み">
+                        </figure>
+                        <h2 class="item__box--ttl">施設見学申し込み</h2>
+                        <h3 class="item__box--txt">
+                            <a href="./visit/visit-tokyo.html" class="ttl">キッザニア東京 施設見学</a>
+                            <a href="./visit/visit-koshien.html" class="ttl">キッザニア甲子園 施設見学</a>
+                            <a href="./visit/visit-fukuoka.html" class="ttl">キッザニア福岡 施設見学</a>
+                        </h3>
+                    </div>
+                </span>
+                <a href="./reserve.html" class="item">
+                    <div class="item__box right">
+                        <figure class="item__box--img"><img src="./assets/img/common/icon-reserve.png" alt="団体予約">
+                        </figure>
+                        <h2 class="item__box--ttl">団体予約</h2>
+                        <h3 class="item__box--txt">一般団体の方は20名以上から<br class="sp-only">受付しております。</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

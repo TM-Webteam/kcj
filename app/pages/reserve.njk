@@ -1,0 +1,54 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "キッザニア 団体予約" %}
+{% set description = "キッザニア団体予約" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# 共通パーツ用相対パスの設定 #}
+{% set path = "./" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="reserve">
+    <section class="hero">
+        <div class="containers flex jcC">
+            <div class="item">
+                <h1 class="ttl-primary cB">キッザニア<br>団体予約</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+
+        <div class="containers">
+            <div class="form__note">
+                <p>団体予約フォーム入力の際の注意点<br>
+                    ● 学校団体予約は、本日より24ヶ月先まで予約可能です。<br>
+                    ● 引率教員は、園児・児童・生徒15名につき1名無料、添乗員・乗務員は入場料金無料になります。<br>
+                    ● 来場人数の「引率教員／付添い」は無料対象者を含む合計人数を入力してください。
+                </p>
+            </div>
+            
+            <!-- cms embed tag -->
+            <div id="bdash_embed_form_container_prd_1629_3">
+                <script type="text/javascript" src="https://cms.smart-bdash.com/1629/embed_tags/3/generate_iframe.js" charset="UTF-8"></script>
+            </div>
+            <!-- end cms embed tag -->
+        </div>
+
+    </section>
+</main>
+{% endblock %}

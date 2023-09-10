@@ -1,0 +1,254 @@
+/*
+  ----------------
+  visit
+  ----------------
+*/
+
+.visit {
+    background-color: #F9F8EE;
+
+    @media #{$sp} {
+        width: 100%;
+    }
+
+    .containers {
+        width: (1100 / 1440) *100vw;
+        max-width: 1100px;
+        padding: 78px 0 70px;
+
+        @media #{$sp} {
+            width: 86%;
+            padding: 35px 0;
+        }
+    }
+
+    .hero {
+
+        &--tokyo {
+            background: url("../img/visit/bg-visit-tokyo.png") no-repeat 50% / cover;
+
+            @media #{$sp} {
+                background: url("../img/visit/bg-visit-tokyo.png") no-repeat center left 50% / cover;
+                text-align: center;
+            }
+        }
+
+        &--koshien {
+            background: url("../img/visit/bg-visit-koshien.png") no-repeat 50% / cover;
+
+            @media #{$sp} {
+                background: url("../img/visit/bg-visit-koshien.png") no-repeat center left 50% / cover;
+                text-align: center;
+            }
+        }
+
+        &--fukuoka {
+            background: url("../img/visit/bg-visit-fukuoka.png") no-repeat 50% / cover;
+
+            @media #{$sp} {
+                background: url("../img/visit/bg-visit-fukuoka.png") no-repeat center left 50% / cover;
+                text-align: center;
+            }
+        }
+        
+
+        .containers {
+            padding: 105px 0 91px;
+
+            @media #{$sp} {
+                width: (690 / 750)*100vw;
+                display: block;
+                padding: (308 / 750)*100vw 0 (60 / 750)*100vw;
+            }
+        }
+
+        .item {
+            width: 792px;
+            margin: 0 auto;
+
+            @media #{$sp} {
+                width: 100%;
+            }
+        }
+
+        .ttl-primary {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #fff;
+
+            @media #{$sp} {
+                font-size: (48/ 750)*100vw;
+                line-height: (70/ 48);
+                margin-bottom: (55/ 750)*100vw;
+            }
+        }
+
+
+        &__lead {
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .outline {
+
+        width: (1100 / 1440) *100vw;
+        max-width: 1100px;
+        padding: 40px 0;
+
+        @media #{$sp} {
+            width: 100%;
+        }
+        
+
+        .group {
+            &:nth-of-type(1) {
+                width: auto;
+                flex: 1;
+
+                @media #{$sp} {
+                    width: 100%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                width: (718 / 1440)*100vw;
+                max-width: 718px;
+
+                @media #{$sp} {
+                    width: 100%;
+                }
+            }
+
+
+            @media #{$sp} {
+                width: 100%;
+            }
+
+            &__inner {
+                width: 100%;
+
+                > .flex {
+                    @media #{$sp} {
+                        justify-content: flex-start;
+                    }                
+                }
+            }
+
+            &__ttl {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: (28 / 16);
+                padding-bottom: 7px;
+                border-bottom: 1px solid #AD033B;
+                margin-bottom: 15px;
+                color: #AD033B;
+
+                @media #{$sp} {
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    position: relative;
+                    display: inline-block;
+
+                    &::before { 
+                        content: "";
+                        position: absolute;
+                        width: 80px;
+                        height: 1px;
+                        background-color: #DE8703;
+                        bottom: -8px;
+                        z-index: 10;
+
+                        @media #{$sp} {
+                            bottom: -6px;
+                        }
+                    }
+                }
+            }
+
+            &__txt {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: (24 / 14);
+
+                &--caution {
+                    margin-top: 5px;
+                    font-size: 12px;
+                }
+            }
+
+            &__list {
+                
+                width: (349 / 1440)* 100vw;
+                max-width: 349px;
+
+                @media #{$sp} {
+                    width: 100%;
+                }
+
+                li {
+                    padding-left: 1em;
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: (21 / 14);
+
+                    &::before {
+                        content: "・";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 14px;
+                    }
+
+                    +* {
+                        margin-top: 12px;
+                    }
+                }
+            }
+
+            &__desc-list {
+                @media #{$sp} {
+                    flex-flow: row nowrap;
+                }
+
+                dt {
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: (21 / 14);
+                    width: 74px;
+                }
+
+                dd {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: (21 / 14);
+                    white-space: nowrap;
+                }
+
+                +* {
+                    margin-top: 6px;
+                }
+            }
+        }
+
+    }
+
+    .form {
+        iframe {
+            border: none;
+            min-height: 2500px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            @media #{$sp} {
+                min-height: 4000px;
+            }
+        }
+    }
+}

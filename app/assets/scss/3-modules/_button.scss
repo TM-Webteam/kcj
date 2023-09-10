@@ -176,41 +176,65 @@
     }
   }
 
-    // ブルーボーダー（団体向け）
-    &.to-customer {
-      background: #E8EBF1;
-      color: #002060;
-      border-color: #002060;
-      border-radius: 5px;
-      padding: 3px 17px;
+// ブルーボーダー（団体向け）
+  &.to-customer {
+    background: #E8EBF1;
+    color: #002060;
+    border-color: #002060;
+    border-radius: 5px;
+    padding: 3px 17px;
 
-      &::before {
-        right: 22px;
-        width: 5px;
-        height: 5px;
-        border-top: solid 2px #fff;
-        border-right: solid 2px #fff;
-        z-index: 10;
-      }
+    &::before {
+      right: 22px;
+      width: 5px;
+      height: 5px;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
+      z-index: 10;
+    }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 15px;
-        margin: auto;
-        width: 18px;
-        height: 18px;
-        background-color: #002060;
-        border-radius: 50%;
-        z-index: 0;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 15px;
+      margin: auto;
+      width: 18px;
+      height: 18px;
+      background-color: #002060;
+      border-radius: 50%;
+      z-index: 0;
+    }
 
 
     &:hover {
       opacity: 0.6;
       transition: all 0.3s ease;
+    }
+  }
+
+  // レッドーボーダー（団体向け）
+  &.border-red {
+    background: #fff;
+    color: #AD033B;
+    border-color: #AD033B;
+    &::before {
+      border-top: solid 3px #AD033B;
+      border-right: solid 3px #AD033B;
+      z-index: 10;
+    }
+    &::after {
+      background-color: #AD033B;
+    }
+    &:hover {
+      opacity: 1;
+      background: #AD033B;
+      color: #fff;
+      &::before {
+        border-top: solid 3px #fff;
+        border-right: solid 3px #fff;
+      }
     }
   }
 }
