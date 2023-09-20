@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-icon-twitter">
+      <rect width="36" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="icon-twitter" clip-path="url(#clip-icon-twitter)">
+    <g id="layer1" transform="translate(-281.5 -166.156)">
+      <path id="path1009" d="M281.588,167.31l13.9,18.584L281.5,201h3.148l12.245-13.228L306.786,201H317.5l-14.681-19.629,13.018-14.064h-3.148l-11.277,12.183L292.3,167.31Zm4.629,2.319h4.921l21.731,29.055h-4.921Z"/>
+    </g>
+  </g>
+</svg>
