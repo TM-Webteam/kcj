@@ -339,3 +339,44 @@ main {
   }
 }
 
+.bdash_form {
+  .bd-pageset-header {
+    display: block;
+    height: auto !important;
+    background-image: none !important;
+  }
+  .bd-pageset-body {
+    padding-top: 137px;
+    @media #{$sp} {
+      padding-top: 58px;
+    }
+    .bd-pageset-parent {
+      &::before {
+        content: none !important;
+      }
+    }
+  }
+}
+
+// .bdash-form-input {
+//   .bd-pageset-header,.bd-pageset-footer {
+//     display: none;
+//   }
+// }
+
+.bdash_form .bd-pageset-parent .page-item {
+  width: 100% !important;
+}
+
+.bdash_form .bd-pageset-body .bd-pageset-content-wrap {
+  max-width: 1000px !important;
+  width: 100% !important;
+}
+
+.bd-pageset-content-wrap p {
+  max-width: none !important;
+}
+
+.bdash-form-input .bd-pageset-parent div:not(:nth-of-type(1)) p {
+  max-width: 490px;
+}
