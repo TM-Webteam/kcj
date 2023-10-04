@@ -163,30 +163,41 @@ $(document).ready(function () {
 
 
 //--------------------------------------
+//　SPナビメニュー
+//--------------------------------------
+
+$(document).ready(function () {
+  $(".dropdown-toggle").on("click", function () {
+    $(this).next(".dropdown-content").slideToggle(400);
+  });
+});
+
+
+//--------------------------------------
 //　バナー　追従
 //--------------------------------------
 
-$(function () {
-  var scrollStart = $('.show').offset().top;
-  var scrollEnd = $('.hide').offset().top;
-  var distance = 0;
+// $(function () {
+//   var scrollStart = $('.show').offset().top;
+//   var scrollEnd = $('.hide').offset().top;
+//   var distance = 0;
 
-  $(document).scroll(function () {
-    distance = $(this).scrollTop();
+//   $(document).scroll(function () {
+//     distance = $(this).scrollTop();
 
-    if (scrollStart <= distance) {
-      $('.floating').addClass('fixed');
-    } else if (scrollStart >= distance) {
-      $('.floating').removeClass('fixed');
-    }
+//     if (scrollStart <= distance) {
+//       $('.floating').addClass('fixed');
+//     } else if (scrollStart >= distance) {
+//       $('.floating').removeClass('fixed');
+//     }
 
-    if (scrollEnd <= distance) {
-      $('.floating').fadeOut();
-    } else {
-      $('.floating').fadeIn();
-    }
-  });
-});
+//     if (scrollEnd <= distance) {
+//       $('.floating').fadeOut();
+//     } else {
+//       $('.floating').fadeIn();
+//     }
+//   });
+// });
 
 
 $(function () {

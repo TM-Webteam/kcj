@@ -12,6 +12,9 @@ header {
   transition: all .3s;
   &.hide {
     transform: translateY(-150px);
+    &.open {
+      transform: none;
+    }
   }
 
   @media #{$tab} {
@@ -425,15 +428,15 @@ header {
 
   #gloval-nav {
     display: none;
-    background: #F4F5F6;
-    padding: 30px 30px 120px;
-    position: fixed;
-    top: 58px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
     .scroll-fix {
-      height: 100%;
+      // height: 100%;
+      background: #F4F5F6;
+      padding: 30px 30px 120px;
+      // position: fixed;
+      // top: 58px;
+      // left: 0;
+      width: 100%;
+      height: 100vh;
       overflow: auto;
 
       &::-webkit-scrollbar {
@@ -448,6 +451,9 @@ header {
           &.parent {
             background: #E9DCCD;
             padding-bottom: 20px;
+            &.pb0 {
+              padding-bottom: 0;
+            }
           }
           .mega {
             &__box {
@@ -470,7 +476,7 @@ header {
           &:not(:last-child) {
             border-bottom: 1px solid #333;
           }
-          a {
+          a,span {
             display: block;
             padding: 10px 20px;
           }
@@ -542,5 +548,8 @@ header.open {
       width: 27px;
     }
   }
+}
 
+.dropdown-content {
+  display: none;
 }
