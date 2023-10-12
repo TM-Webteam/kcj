@@ -565,3 +565,13 @@ header.open {
 .dropdown-content {
   display: none;
 }
+
+.dropdown-cont {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-btn:hover .dropdown-cont {
+  visibility: visible;
+  opacity: 1;
+}

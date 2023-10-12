@@ -210,3 +210,31 @@ $(function () {
   }
 });
 
+
+var submitButton = document.querySelector('input[type="submit"].bdash_form_commit_button');
+
+if (submitButton) {
+  submitButton.value = "内容確認画面へ";
+}
+
+function buttonClick(event) {
+  var target = event.target;
+  var dataTarget = target.getAttribute('data-target');
+  
+  if (dataTarget) {
+    var dropdownContent = target.nextElementSibling;
+    if (dropdownContent.style.display === 'block') {
+      dropdownContent.style.display = 'none';
+    } else {
+      dropdownContent.style.display = 'block';
+    }
+  }
+}
+
+var isiPad = /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+if (isiPad) {
+  var buttons = document.querySelectorAll('.dropdown-btn');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', buttonClick);
+  });
+}
