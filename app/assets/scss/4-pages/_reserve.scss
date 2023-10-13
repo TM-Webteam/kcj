@@ -37,7 +37,9 @@
             @media #{$sp} {
                 width: (690 / 750)*100vw;
                 display: block;
-                padding: (308 / 750)*100vw 0 (60 / 750)*100vw;
+                // padding: (308 / 750)*100vw 0 (60 / 750)*100vw;
+                padding: 30px 0;
+                
             }
         }
 

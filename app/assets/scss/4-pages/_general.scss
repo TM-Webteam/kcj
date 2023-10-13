@@ -171,7 +171,7 @@
     }
 
     .breadcrumbs {
-        width: 1100px;
+        max-width: 1100px;
         margin: auto;
         padding: 6px 0 7px;
 
@@ -200,7 +200,7 @@
 
     .place {
         .containers {
-            width: 1100px;
+            // width: 1100px;
 
             @media #{$sp} {
                 width: 100%;
@@ -223,6 +223,9 @@
                 &:nth-of-type(1) {
                     width: 660px;
 
+                    @media #{$h-sp} {
+                      width: 55%;
+                    }
 
                     @media #{$sp} {
                         width: 100%;
@@ -240,6 +243,10 @@
 
                 &:nth-of-type(2) {
                     width: 438px;
+
+                    @media #{$h-sp} {
+                      width: 40%;
+                    }
 
                     @media #{$sp} {
                         width: 100%;
@@ -327,7 +334,7 @@
         background-color: #F7F6E8;
 
         .containers {
-            width: 1100px;
+            // width: 1100px;
 
             @media #{$sp} {
                 width: 100%;
@@ -347,7 +354,8 @@
             }
 
             &__wrap {
-                width: 347px;
+                // width: 347px;
+                width: calc(100% / 3 - 20px);
                 position: relative;
                 text-align: center;
 
@@ -424,7 +432,7 @@
 
         .attention {
             background: #fff url("../img/group/general/icon-loudspeaker.png") no-repeat center left 27px / 130px 94px;
-            width: 1080px;
+            width: 95%;
             margin: 0 auto;
             border-radius: 10px;
             box-shadow: 0 0 10px 0 rgba(172, 169, 134, .22);

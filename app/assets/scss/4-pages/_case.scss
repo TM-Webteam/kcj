@@ -66,7 +66,8 @@
             @media #{$sp} {
                 width: (690 / 750)*100vw;
                 display: block;
-                padding: (300 / 750)*100vw 0 (95 / 750)*100vw;
+                // padding: (300 / 750)*100vw 0 (95 / 750)*100vw;
+                padding: 30px 0;
             }
         }
 
@@ -100,7 +101,7 @@
     }
 
     .breadcrumbs {
-        width: 1100px;
+        max-width: 1100px;
         margin: auto;
         padding: 6px 0 7px;
 
@@ -237,7 +238,7 @@
         background-color: #F7F6E8;
 
         .containers {
-            width: 1100px;
+            // width: 1100px;
             margin: auto;
 
             @media #{$sp} {
@@ -385,7 +386,7 @@
         position: relative;
 
         .containers {
-            width: 1100px;
+            // width: 1100px;
             position: relative;
             z-index: 20;
             @media #{$sp} {
@@ -447,7 +448,7 @@
     .point {
         background-color: #F7F6E8;
         .containers {
-            width: 1100px;
+            // width: 1100px;
             margin: auto;
 
             @media #{$sp} {

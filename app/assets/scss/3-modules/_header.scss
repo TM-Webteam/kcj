@@ -569,6 +569,7 @@ header.open {
 .dropdown-cont {
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 
 .dropdown-btn:hover .dropdown-cont {

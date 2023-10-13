@@ -200,15 +200,15 @@ $(document).ready(function () {
 // });
 
 
-$(function () {
-  if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)) {
-    $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
-  } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-    $('head').prepend('<meta name="viewport" content="width=1440">');
-  } else if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1 && typeof document.ontouchstart !== 'undefined') {
-    $('head').prepend('<meta name="viewport" content="width=1440">');
-  }
-});
+// $(function () {
+//   if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)) {
+//     $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
+//   } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+//     $('head').prepend('<meta name="viewport" content="width=1440">');
+//   } else if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1 && typeof document.ontouchstart !== 'undefined') {
+//     $('head').prepend('<meta name="viewport" content="width=1440">');
+//   }
+// });
 
 
 var submitButton = document.querySelector('input[type="submit"].bdash_form_commit_button');
@@ -217,24 +217,53 @@ if (submitButton) {
   submitButton.value = "内容確認画面へ";
 }
 
-function buttonClick(event) {
-  var target = event.target;
-  var dataTarget = target.getAttribute('data-target');
+// function buttonClick(event) {
+//   var target = event.target;
+//   var dataTarget = target.getAttribute('data-target');
   
-  if (dataTarget) {
-    var dropdownContent = target.nextElementSibling;
-    if (dropdownContent.style.display === 'block') {
-      dropdownContent.style.display = 'none';
-    } else {
-      dropdownContent.style.display = 'block';
-    }
-  }
-}
+//   if (dataTarget) {
+//     var dropdownContent = target.nextElementSibling;
+//     if (dropdownContent.style.display === 'block') {
+//       dropdownContent.style.display = 'none';
+//     } else {
+//       dropdownContent.style.display = 'block';
+//     }
+//   }
+// }
 
-var isiPad = /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-if (isiPad) {
-  var buttons = document.querySelectorAll('.dropdown-btn');
-  buttons.forEach(function (button) {
-    button.addEventListener('click', buttonClick);
-  });
-}
+// $(document).ready(function() {
+//   // タッチデバイス向けにタッチイベントを使う
+//   var isTouchDevice = 'ontouchstart' in document.documentElement;
+//   var clickEvent = isTouchDevice ? 'touchstart' : 'click';
+
+//   // ボタンクリック/タッチ時の処理
+//   $('.dropdown-btn').on(clickEvent, function(event) {
+//     event.stopPropagation();
+//     var dataTarget = $(this).data('target');
+//     var dropdownContent = $('.' + dataTarget);
+
+//     // メニューの表示を切り替える
+//     dropdownContent.toggle();
+    
+//     // クリック/タッチイベントがドキュメント全体に伝搬しないように
+//     return false;
+//   });
+
+//   // メニュー以外の場所をクリック/タッチしたらメニューを閉じる
+//   $(document).on(clickEvent, function() {
+//     $('.dropdown-cont').hide();
+//   });
+
+//   // メニュー自体をクリック/タッチしても閉じないように
+//   $('.dropdown-cont').on(clickEvent, function(event) {
+//     event.stopPropagation();
+//   });
+// });
+
+// var isiPad = /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+// if (isiPad) {
+//   var buttons = document.querySelectorAll('.dropdown-btn');
+//   buttons.forEach(function (button) {
+//     button.addEventListener('click', buttonClick);
+//   });
+// }

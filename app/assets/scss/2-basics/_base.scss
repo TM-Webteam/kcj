@@ -277,7 +277,7 @@ a,button[type="submit"] {
 
 main {
   padding-top: 137px;
-  @media #{$sp} {
+  @media #{$h-sp} {
     padding-top: 60px;
   }
 }

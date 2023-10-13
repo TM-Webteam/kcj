@@ -31,22 +31,35 @@
   }
 }
 
-
-header {
-  .sp-only {
-    @media #{$pc} {
-      display: none !important;
-    }
-    @media #{$tab} {
-      display: block !important;
-    }
-  }
-  
-  
-  .pc-only {
-    @media #{$tab} {
-      display: none !important;
-    }
+.hsp-only {
+  @media #{$h-pc} {
+    display: none !important;
   }
 }
+
+
+.hpc-only {
+  @media #{$h-sp} {
+    display: none !important;
+  }
+}
+
+
+// header {
+//   .sp-only {
+//     @media #{$pc} {
+//       display: none !important;
+//     }
+//     @media #{$tab} {
+//       display: block !important;
+//     }
+//   }
+  
+  
+//   .pc-only {
+//     @media #{$tab} {
+//       display: none !important;
+//     }
+//   }
+// }
 

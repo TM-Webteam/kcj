@@ -16,13 +16,13 @@
   .hero {
     background: url("../img/top/bg-hero.png") no-repeat 50% / cover;
 
-    @media #{$sp} {
+    @media #{$h-sp} {
       background: url("../img/top/bg-hero-sp.png") no-repeat top left / 100% auto;
       text-align: center;
     }
 
     .containers {
-      @media #{$sp} {
+      @media #{$h-sp} {
         width: (690 / 750)*100vw;
         display: block;
         padding: (300 / 750)*100vw 0 (95 / 750)*100vw;
@@ -448,7 +448,7 @@
 
   .faq {
     .containers {
-      width: 1100px;
+      // width: 1100px;
       max-width: 100%;
 
       @media #{$sp} {
