@@ -8,7 +8,7 @@
 
     // 共通
     .containers {
-        padding: 70px 0;
+        // padding: 70px 0;
 
         @media #{$sp} {
             padding: 35px 15px;
@@ -173,7 +173,7 @@
     .breadcrumbs {
         max-width: 1100px;
         margin: auto;
-        padding: 6px 0 7px;
+        padding: 6px 15px 7px;
 
         @media #{$sp} {
             width: 90%;
@@ -224,7 +224,7 @@
                     width: 660px;
 
                     @media #{$h-sp} {
-                      width: 55%;
+                      width: 600px;
                     }
 
                     @media #{$sp} {
@@ -245,7 +245,7 @@
                     width: 438px;
 
                     @media #{$h-sp} {
-                      width: 40%;
+                      width: 362px;
                     }
 
                     @media #{$sp} {
@@ -494,18 +494,24 @@
 
         .flex {
             justify-content: center;
+            gap: 40px;
+            @media #{$sp} {
+              gap: 20px;
+            }
+
         }
 
         .item {
-            width: 470px;
-            height: 522px;
+            // width: 470px;
+            // height: 522px;
+            width: calc(100% / 2 - 20px);
             margin: 0 auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px 0 rgba(172, 169, 134, .22);
             padding: 72px 40px 40px;
             +* {
-                margin-left: 40px;
+                // margin-left: 40px;
 
                 @media #{$sp} {
                     margin: 40px 0 0 0;

@@ -7,7 +7,7 @@
 .top {
   // 共通
   .containers {
-    padding: 70px 0;
+    // padding: 70px 0;
   }
 
   @media #{$sp} {}
@@ -449,7 +449,6 @@
   .faq {
     .containers {
       // width: 1100px;
-      max-width: 100%;
 
       @media #{$sp} {
         width: 90%;

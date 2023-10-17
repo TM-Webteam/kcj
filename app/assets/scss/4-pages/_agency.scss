@@ -8,7 +8,8 @@
 
     // 共通
     .containers {
-        padding: 70px 0;
+        padding: 70px 30px;
+        // max-width: 1100px;
 
         @media #{$sp} {
             padding: 35px 15px;
@@ -180,9 +181,9 @@
     }
 
     .breadcrumbs {
-        max-width: 1100px;
+        // max-width: 1100px;
         margin: auto;
-        padding: 6px 0 7px;
+        padding: 6px 15px 7px;
 
         @media #{$sp} {
             width: 90%;
@@ -335,7 +336,8 @@
             }
 
             &__wrap {
-                width: 347px;
+                // width: 347px;
+                width: calc(100% / 3 - 20px);
                 position: relative;
                 text-align: center;
 
@@ -362,6 +364,11 @@
                     text-align: center;
                     font-weight: bold;
                     position: relative;
+
+                    @media #{$h-sp} {
+                      padding: 18px 20px;
+                      font-size: 18px;
+                    }
 
                     @media #{$sp} {
                         font-size: (32/ 750)*100vw;
@@ -412,11 +419,11 @@
 
         .attention {
             background: #fff url("../img/group/general/icon-loudspeaker.png") no-repeat center left 27px / 130px 94px;
-            width: 1080px;
+            max-width: 1080px;
             margin: 0 auto;
             border-radius: 10px;
             box-shadow: 0 0 10px 0 rgba(172, 169, 134, .22);
-            padding: 30px 138px;
+            padding: 30px 120px;
             text-align: center;
             font-size: 20px;
             font-weight: bold;
@@ -460,7 +467,7 @@
 
         .item {
             >* {
-                width: 520px;
+                width: calc(100% / 2 - 30px);
 
                 @media #{$sp} {
                     width: 100%;
@@ -511,6 +518,9 @@
                 &:nth-of-type(1) {
                     width: 660px;
 
+                    @media #{$h-sp} {
+                      width: 592px;
+                    }
 
                     @media #{$sp} {
                         width: 100%;
@@ -528,6 +538,10 @@
 
                 &:nth-of-type(2) {
                     width: 438px;
+
+                    @media #{$h-sp} {
+                      width: 370px;
+                    }
 
                     @media #{$sp} {
                         width: 100%;
