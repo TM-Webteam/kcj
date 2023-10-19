@@ -160,7 +160,7 @@
         }
 
         .containers {
-            padding: 70px 0 80px;
+            // padding: 70px 0 80px;
             @media #{$sp} {
                 padding: 35px 15px 70px;
             }
@@ -180,8 +180,18 @@
                 font-size: 18px;
                 font-weight: bold;
 
+                @media #{$h-sp} {
+                  width: calc(100% / 3 - 20px);
+                }
+
                 &:nth-of-type(n+5) {
-                    width: 293px;
+                  width: 293px;
+                  @media #{$h-sp} {
+                    width: calc(100% / 3 - 20px);
+                  }
+                  @media #{$sp} {
+                    width: calc(100% / 2 - 10px);
+                  }
                 }
 
                 @media #{$sp} {
