@@ -18,7 +18,7 @@ header {
   }
 
   @media #{$tab} {
-    max-width: 820px;
+    // max-width: 820px;
   }
 
 
@@ -566,13 +566,13 @@ header.open {
   display: none;
 }
 
-.dropdown-cont {
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-}
+// .dropdown-cont {
+//   visibility: hidden;
+//   opacity: 0;
+//   display: none;
+// }
 
-.dropdown-btn:hover .dropdown-cont {
-  visibility: visible;
-  opacity: 1;
-}
+// .dropdown-btn:hover .dropdown-cont {
+//   visibility: visible;
+//   opacity: 1;
+// }

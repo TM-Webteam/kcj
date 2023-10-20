@@ -221,6 +221,8 @@
 
         &--ttl {
           margin-bottom: 8px;
+          position: relative;
+          z-index: 5;
           @media #{$sp} {
             font-size: (28 / 750)*100vw;
           }
@@ -230,7 +232,8 @@
         &--txt {
           color: #000;
           line-height: (87 / 68);
-
+          position: relative;
+          z-index: 5;
           span {
             font-size: 68px;
 
@@ -244,7 +247,8 @@
           font-size: 14px;
           text-align: right;
           font-weight: 600;
-
+          position: relative;
+          z-index: 5;
           @media #{$pc} {
             position: relative;
             top: -16px;
@@ -335,20 +339,21 @@
         width: 100%;
         max-width: 100%;
         margin: 0;
+        gap: 15px;
 
         .more {
           width: 400px;
           padding: 10px 17px;
           margin: 0;
   
-          +* {
-            @media #{$sp} {
-              margin-top: 15px;
-            }
-            @media #{$pc} {
-              margin-left: 15px;
-            }
-          }
+          // +* {
+          //   @media #{$sp} {
+          //     margin-top: 15px;
+          //   }
+          //   @media #{$pc} {
+          //     margin-left: 15px;
+          //   }
+          // }
         }
       }
     }

@@ -185,8 +185,13 @@
                 font-weight: bold;
 
                 @media #{$sp} {
-                    width: 293px;
+                    // width: 293px;
                     font-size: 14px;
+                    width: calc(100% / 4 - 30px);
+                }
+
+                @media #{$sp-m} {
+                  width: 100%;
                 }
 
 
@@ -201,9 +206,9 @@
                     height: 6px;
                     background-color: #D4D4D4;
 
-                    @media #{$sp} {
-                        top: 146px;
-                    }
+                    // @media #{$sp} {
+                    //     top: 146px;
+                    // }
                 }
 
                 span {
@@ -226,11 +231,13 @@
                         display: grid;
                         place-items: center;
                         width: 100%;
-                        min-height: (146 / 750)*100vw;
+                        // min-height: (146 / 750)*100vw;
                         padding: 10px;
                         border: 2px solid #DE8703;
+                        height: 80px;
 
                     }
+
 
                     &::before {
                         content: "";
@@ -630,7 +637,8 @@
                             @media #{$sp} {
                                 width: 100%;
                                 font-size: 12px;
-                                height: (52 / 750)*100vw;
+                                // height: (52 / 750)*100vw;
+                                height: auto;
                             }
                         }
 
@@ -926,7 +934,7 @@
 
     .photo-service {
         background: #fff url("../img/about/bg-about-photo-service.png") no-repeat top right / cover;
-        @media #{$sp} {
+        @media #{$sp-m} {
           background: #fff url("../img/about/bg-about-photo-service-sp.png") no-repeat bottom left / 100% auto;
         }
         .containers {
@@ -935,7 +943,7 @@
             background: rgba(255,255,255,0.4);
           }
 
-          @media #{$sp} {
+          @media #{$sp-m} {
             padding: 35px 15px 210px;
             background: rgba(255,255,255,0);
           }
@@ -945,7 +953,7 @@
           text-align: left;
           margin-bottom: 30px;
     
-          @media #{$sp} {
+          @media #{$sp-m} {
             text-align: center;
             margin-bottom: 20px;
             line-height: 1.6;

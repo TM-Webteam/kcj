@@ -201,7 +201,8 @@
 
                 &--ttl {
                     margin-bottom: 8px;
-
+                    position: relative;
+                    z-index: 5;
                     @media #{$sp} {
                         font-size: (28 / 750)*100vw;
                     }
@@ -211,7 +212,8 @@
                 &--txt {
                     color: #000;
                     line-height: (87 / 68);
-
+                    position: relative;
+                    z-index: 5;
                     span {
                         font-size: 68px;
 
@@ -225,6 +227,8 @@
                     font-size: 14px;
                     text-align: right;
                     font-weight: 400;
+                    position: relative;
+                    z-index: 5;
                   }
             }
         }

@@ -1,13 +1,14 @@
 // Breakpoint設定
-$h-sp: "all and (max-width : 1024px)";
-$h-pc: "all and (min-width : 1025px)";
-$sp: "all and (max-width : 768px)";
+$h-sp: "all and (max-width : 1180px)";
+$h-pc: "all and (min-width : 1181px)";
+$sp: "all and (max-width : 1180px)";
+$sp-m: "all and (max-width : 768px)";
 //$sm: "all and (max-width : 840px)";
 //$md: "all and (max-width : 1000px)";
 //$lg: "all and (max-width : 1100px)";
-$tab: "all and (max-width : 860px)";
+$tab: "all and (max-width : 1180px)";
 //$xl: "all and (max-width : 1200px)";
-$pc: "all and (min-width: 769px)";
+$pc: "all and (min-width: 1181px)";
 
 // Font-family
 @font-face {

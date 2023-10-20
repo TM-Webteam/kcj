@@ -336,6 +336,7 @@ main {
   width: 300px;
   @media #{$sp} {
     width: 100%;
+    text-align: center;
   }
 }
 
